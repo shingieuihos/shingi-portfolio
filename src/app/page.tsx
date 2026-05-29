@@ -82,6 +82,8 @@ function Hero() {
           <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-[0.2em] text-muted-2 mb-6">
             <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
             <span>{profile.available}</span>
+            <span className="text-muted-2/50">·</span>
+            <ViewCounter />
           </div>
           <h1 className="font-display text-5xl sm:text-7xl lg:text-[5.5rem] leading-[0.95] tracking-tight text-balance">
             Shingi <span className="italic text-accent">Mudyirwa</span>.
@@ -529,11 +531,8 @@ function Footer() {
             {profile.location} · © {new Date().getFullYear()}
           </div>
         </div>
-        <div className="flex flex-col sm:items-end gap-1">
-          <ViewCounter />
-          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-2">
-            Built with Next.js · Deployed on Cloudflare
-          </div>
+        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-2">
+          Built with Next.js · Deployed on Cloudflare
         </div>
       </div>
     </footer>
