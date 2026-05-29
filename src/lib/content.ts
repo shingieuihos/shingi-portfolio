@@ -24,7 +24,7 @@ export const profile = {
 
 export const about = {
   intro:
-    "I'm an AWS-focused cloud engineer and product builder. I lead engineering at SubSaharaData, run PeakRank Digital as founder, SignalCartel and direct WhatTheWordSays — a digital ministry reaching tens of thousands of people monthly. Twenty years of ministry leadership shapes how I build: long horizons, real users, plain language.",
+    "I'm a software developer who pairs hands-on AWS cloud engineering with Claude AI specialization. I lead engineering at SubSaharaData, run PeakRank Digital as founder, SignalCartel and direct WhatTheWordSays — a digital ministry reaching tens of thousands of people monthly. Twenty years of ministry leadership shapes how I build: long horizons, real users, plain language.",
   story:
     "My IT journey started as a teenager — I moved to Cape Town to study at CTU Training Solutions, two years that earned me CompTIA A+, Network+ and MCSE. Today I work with AWS and Linux, and on AI-assisted software with Anthropic's Claude. I enjoy the part where complex infrastructure quietly becomes a simple product someone uses every day — and I stay in constant training to keep the skill level sharp.",
   ministry:
