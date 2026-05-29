@@ -1,9 +1,17 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "shingi-portfolio",
+  "main": "worker/index.ts",
   "compatibility_date": "2026-05-28",
   "assets": {
     "directory": "./out",
+    "binding": "ASSETS",
     "not_found_handling": "404-page"
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "VIEWS",
+      "id": "8c6f333d971f40a49e03e90240152b42"
+    }
+  ]
 }

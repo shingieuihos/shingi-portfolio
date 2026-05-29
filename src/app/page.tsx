@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ViewCounter } from "./ViewCounter";
 import {
   about,
   badges,
@@ -528,8 +529,11 @@ function Footer() {
             {profile.location} · © {new Date().getFullYear()}
           </div>
         </div>
-        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-2">
-          Built with Next.js · Deployed on Cloudflare
+        <div className="flex flex-col sm:items-end gap-1">
+          <ViewCounter />
+          <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-2">
+            Built with Next.js · Deployed on Cloudflare
+          </div>
         </div>
       </div>
     </footer>
