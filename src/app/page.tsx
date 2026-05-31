@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ViewCounter } from "./ViewCounter";
 import {
   about,
@@ -51,6 +52,12 @@ function TopNav() {
           >
             Experience
           </a>
+          <Link
+            href="/blog"
+            className="hover:text-foreground transition-colors"
+          >
+            Field notes
+          </Link>
           <a href="#certs" className="hover:text-foreground transition-colors">
             Certifications
           </a>
@@ -530,9 +537,6 @@ function Footer() {
           <div className="mt-1">
             {profile.location} · © {new Date().getFullYear()}
           </div>
-        </div>
-        <div className="font-mono text-[11px] uppercase tracking-[0.2em] text-muted-2">
-          Built with Next.js · Deployed on Cloudflare
         </div>
       </div>
     </footer>
