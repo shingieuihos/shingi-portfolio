@@ -29,6 +29,23 @@ export default {
     }
 
     // Fall through to the static site (also applies not_found_handling).
-    return env.ASSETS.fetch(request);
+    const response = await env.ASSETS.fetch(request);
+
+    // Next emits Open Graph images as extensionless files named
+    // `opengraph-image`, so the asset server can't infer their MIME type and
+    // would serve them as application/octet-stream — which LinkedIn and other
+    // scrapers reject. Force image/png and cache them hard.
+    if (url.pathname.endsWith("/opengraph-image") && response.ok) {
+      const headers = new Headers(response.headers);
+      headers.set("content-type", "image/png");
+      headers.set("cache-control", "public, max-age=31536000, immutable");
+      return new Response(response.body, {
+        status: response.status,
+        statusText: response.statusText,
+        headers,
+      });
+    }
+
+    return response;
   },
 };

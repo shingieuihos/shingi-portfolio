@@ -37,13 +37,13 @@ export async function generateMetadata({
       // article:author → links the post to the LinkedIn profile
       authors: [profile.social.linkedin],
       tags: post.tags,
-      images: [{ url: "/portrait.png", width: 1200, height: 1200 }],
+      // og:image is supplied by the generated opengraph-image.tsx (1200×630)
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: ["/portrait.png"],
+      // twitter:image is derived from the generated opengraph-image.tsx
     },
   };
 }
