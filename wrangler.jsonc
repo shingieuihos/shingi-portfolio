@@ -6,7 +6,14 @@
   "assets": {
     "directory": "./out",
     "binding": "ASSETS",
-    "not_found_handling": "404-page"
+    "not_found_handling": "404-page",
+    // OG images are emitted as extensionless files, so Cloudflare serves them
+    // with no Content-Type. Run the Worker first for those paths so it can set
+    // image/png; everything else is still served directly from assets.
+    "run_worker_first": [
+      "/blog/opengraph-image",
+      "/blog/*/opengraph-image"
+    ]
   },
   "kv_namespaces": [
     {
