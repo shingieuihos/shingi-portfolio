@@ -80,6 +80,18 @@ export const projects: Project[] = [
     stack: ["Next.js", "Supabase", "Telegram API", "Stripe", "PM2", "Caddy"],
     year: "2025",
   },
+  {
+    slug: "whatthewordsays",
+    name: "WhatTheWordSays",
+    role: "Founder & Director",
+    tagline: "Bible teaching and commentary for a digital generation.",
+    description:
+      "A digital ministry platform reaching tens of thousands through Bible teaching, commentary and discipleship. Founded and directed end to end — strategy, content and the technical stack, currently mid-redesign.",
+    url: "https://whatthewordsays.org",
+    image: "/projects/whatthewordsays.png",
+    stack: ["WordPress", "PHP", "MySQL", "SEO", "Content"],
+    year: "2020",
+  },
 ];
 
 export type Role = {
