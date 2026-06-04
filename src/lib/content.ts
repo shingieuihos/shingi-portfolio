@@ -92,6 +92,18 @@ export const projects: Project[] = [
     stack: ["WordPress", "PHP", "MySQL", "SEO", "Content"],
     year: "2020",
   },
+  {
+    slug: "laurian",
+    name: "Laurian Nortje",
+    role: "Designer & Developer",
+    tagline: "A media personality's brand, rebuilt for booking.",
+    description:
+      "Rebuilt an MC and keynote speaker's WordPress site as a Next.js + Supabase application — editorial brand, blog, and booking/lead capture with email notifications. Designed and shipped end to end, deployed on Vercel.",
+    url: "https://laurian.co.za",
+    image: "/projects/laurian.png",
+    stack: ["Next.js", "React", "TypeScript", "Supabase", "Resend", "Vercel"],
+    year: "2026",
+  },
 ];
 
 export type Role = {
