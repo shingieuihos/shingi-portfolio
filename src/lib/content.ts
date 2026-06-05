@@ -263,7 +263,7 @@ export const education: Education[] = [
     school: "Anthropic Academy",
     qualification: "Claude Certified Architect",
     date: "Feb 2026 – Present",
-    note: "Building with the Claude API · Model Context Protocol (Intro & Advanced) · Introduction to Agent Skills · Introduction to Subagents · Claude Code in Action · Claude with Amazon Bedrock",
+    note: "Building with the Claude API · Model Context Protocol (Intro & Advanced) · Introduction to Agent Skills · Introduction to Subagents · Claude Code in Action · Claude with Amazon Bedrock · On the path to the Claude Partner Network",
     status: "in-progress",
   },
   {

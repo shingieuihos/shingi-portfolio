@@ -1,0 +1,14 @@
+Anyone can say they "do AI" now. The bar has never been lower — which is exactly why it's worth clearing a higher one.
+
+At PeakRank Digital I'm building something more deliberate than an agency that bolted a chatbot onto its services: a certified Claude practice.
+
+Three commitments:
+→ build on Anthropic's Claude as core infrastructure, not a gimmick
+→ train and certify the team through Anthropic Academy — not on the client's dime
+→ hold ourselves to the standard set by Anthropic's partner programme for putting Claude into production responsibly
+
+For a client, that's risk bought down: people trained and tested on the tool they're deploying for you, a discipline for accuracy and data safety, and a team plugged into the ecosystem instead of guessing from blog posts.
+
+First in a short series on that journey 👇
+
+#Claude #AI #SouthAfrica #PeakRankDigital

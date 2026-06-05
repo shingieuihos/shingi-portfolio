@@ -1,0 +1,15 @@
+It's easy to claim AI expertise. It's harder to sit the courses, build the projects, and pass the assessments.
+
+As part of building a certified Claude practice, I've been working through Anthropic Academy's learning path. The substance is the point:
+
+→ Building with the Claude API
+→ Model Context Protocol (intro + advanced)
+→ Agent Skills & Subagents
+→ Claude Code in Action
+→ Claude with Amazon Bedrock
+
+Every one maps to how we actually build: the API and Bedrock work is how we run Claude in production; MCP is how an assistant gets safely grounded in a client's real data; skills and subagents turn one model call into a reliable workflow.
+
+The value of certification isn't the certificate. It's that the person deploying AI for you has actually been trained and tested on it.
+
+#Claude #AI #AnthropicAcademy #Engineering

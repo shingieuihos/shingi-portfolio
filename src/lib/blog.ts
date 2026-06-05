@@ -935,6 +935,388 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "building-a-certified-claude-practice",
+    title: "Why we're building PeakRank into a certified Claude practice",
+    description:
+      "PeakRank Digital is going all-in on Anthropic's Claude — certifying the team through Anthropic Academy and building to the standard of the Claude Partner Network. Here's why, and what it means for clients.",
+    date: "2026-06-10",
+    dateLabel: "10 June 2026",
+    readingMinutes: 6,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Claude", "Anthropic", "Claude Partner Network", "certification", "South Africa"],
+    tldr: "I'm building PeakRank Digital into a certified Claude practice: a team trained and certified on Anthropic's Claude through Anthropic Academy, working to the standard set by the Claude Partner Network. The point is simple — clients should be able to trust that the people deploying AI for them are genuinely qualified to.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Anyone can say they 'do AI' now. The bar to claim it has never been lower, which is exactly why it's worth clearing a higher one. At PeakRank Digital I'm building something more deliberate than an agency that bolted a chatbot onto its services: a certified Claude practice, with the training and accountability to back the claim.",
+      },
+      {
+        type: "h2",
+        text: "What 'a certified Claude practice' actually means",
+        id: "what-it-means",
+      },
+      {
+        type: "p",
+        text: "It means three concrete commitments. First, we build on Anthropic's Claude as the core reasoning engine across our products — not as a gimmick, but as infrastructure. Second, the team trains and certifies on Claude through Anthropic Academy rather than learning on the client's dime. Third, we hold ourselves to the standard set by Anthropic's partner programme for firms that put Claude into production responsibly.",
+      },
+      {
+        type: "h2",
+        text: "Why go this deep on one model",
+        id: "why-deep",
+      },
+      {
+        type: "p",
+        text: "Specialisation beats dabbling. The teams that get real results from AI are the ones who understand a model deeply — its strengths, its failure modes, how to ground it, how to keep a human in the loop. Spreading thin across every tool produces shallow work. Going deep on Claude lets us build patterns we can reuse and trust, which is the whole premise of the products documented elsewhere on this blog.",
+      },
+      {
+        type: "quote",
+        text: "The bar to say you 'do AI' is on the floor. That's the best reason to clear a much higher one.",
+      },
+      {
+        type: "h2",
+        text: "What it means for clients",
+        id: "for-clients",
+      },
+      {
+        type: "p",
+        text: "When you hire a certified Claude practice, you're buying down risk. You get people who've been trained and tested on the tool they're deploying for you, who follow a discipline for accuracy and data safety, and who are plugged into Anthropic's ecosystem rather than guessing from blog posts. For a South African business weighing how to adopt AI without getting burned, that difference is the entire value.",
+      },
+      {
+        type: "p",
+        text: "This is the first in a short series on that journey — what the Claude Partner Network is, what certifying actually involved, and what a certified practice changes for the businesses we serve.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is a certified Claude practice?",
+        a: "It's a team that builds on Anthropic's Claude as core infrastructure, trains and certifies on it through Anthropic Academy, and works to the standard set by Anthropic's partner programme — so clients can trust the people deploying AI for them are genuinely qualified.",
+      },
+      {
+        q: "Why does PeakRank focus on Anthropic's Claude?",
+        a: "Specialising deeply on one capable model produces more reliable, reusable results than dabbling across many tools. PeakRank builds on Claude as its core reasoning engine and certifies the team on it through Anthropic Academy.",
+      },
+      {
+        q: "How does this benefit clients?",
+        a: "Clients get reduced risk: people trained and tested on the tool they're deploying, a discipline for accuracy and data safety, and a team plugged into Anthropic's ecosystem rather than improvising.",
+      },
+    ],
+  },
+  {
+    slug: "what-is-the-claude-partner-network",
+    title: "What the Claude Partner Network is — and why it matters to the businesses we serve",
+    description:
+      "A plain-language explainer of Anthropic's Claude Partner Network: what it is, how its tiers work, where it's heading, and why a certified, accountable AI partner beats a generalist.",
+    date: "2026-06-11",
+    dateLabel: "11 June 2026",
+    readingMinutes: 6,
+    category: "Strategy",
+    tags: ["Claude Partner Network", "Anthropic", "Claude", "AI", "partner ecosystem", "South Africa"],
+    tldr: "The Claude Partner Network is Anthropic's programme for firms that responsibly put Claude into production for customers. It certifies practitioners and holds partners to published standards through a tiered ladder. For a business adopting AI, it's a signal that separates teams genuinely qualified on Claude from everyone claiming to be.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "If you're going to trust a firm to put AI into your business, you should be able to check that they're actually any good at it. That's the gap programmes like the Claude Partner Network exist to close. Here's a plain-language explainer of what it is and why it should matter to you as a buyer.",
+      },
+      {
+        type: "h2",
+        text: "What it is",
+        id: "what-it-is",
+      },
+      {
+        type: "p",
+        text: "The Claude Partner Network is Anthropic's programme for firms that responsibly put Claude into production for their customers. In short, it's a structured way for Anthropic to recognise, certify and support the companies building real solutions on Claude — and a way for customers to tell those companies apart from the crowd.",
+      },
+      {
+        type: "h2",
+        text: "How the tiers work",
+        id: "tiers",
+      },
+      {
+        type: "p",
+        text: "Rather than a single badge, the network is a ladder. Firms advance through tiers by meeting published requirements — things like the number of certified practitioners on the team and a track record of putting Claude into production for real customers. Higher tiers demand more proof. The point of the structure is that standing is earned against concrete criteria, not bought or self-declared.",
+      },
+      {
+        type: "h2",
+        text: "Where it's going",
+        id: "where-its-going",
+      },
+      {
+        type: "p",
+        text: "Anthropic has been expanding the programme — most recently opening a dedicated services track for firms that deliver Claude solutions to customers. The direction of travel is clear: as AI moves from experiment to production across the economy, the ecosystem of qualified, accountable implementation partners becomes critical infrastructure. Getting established in that ecosystem early is exactly why we're investing in it now.",
+      },
+      {
+        type: "quote",
+        text: "A programme like this turns 'trust me, we do AI' into 'here's the standard we're held to'. For a buyer, that's the whole game.",
+      },
+      {
+        type: "h2",
+        text: "Why it matters to you",
+        id: "why-it-matters",
+      },
+      {
+        type: "p",
+        text: "For a business choosing how to adopt AI, the network is a filter. It distinguishes teams who've been certified and vetted from the much larger group simply claiming expertise. When you work with a practice that's building to that standard, you inherit the assurance that comes with it — qualified people, a real methodology, and a line back to Anthropic itself.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is the Claude Partner Network?",
+        a: "It's Anthropic's programme for firms that responsibly put Claude into production for customers. It certifies practitioners and recognises partners against published, tiered requirements, helping customers identify genuinely qualified Claude implementation teams.",
+      },
+      {
+        q: "How do the Claude Partner Network tiers work?",
+        a: "Partners advance through tiers by meeting published requirements, such as the number of certified team members and a track record of production deployments for customers. Higher tiers require more proof, so standing is earned against concrete criteria.",
+      },
+      {
+        q: "Where is the Claude Partner Network heading?",
+        a: "Anthropic has been expanding it, including a dedicated services track for firms delivering Claude solutions to customers — building out an ecosystem of qualified, accountable implementation partners as AI moves into production across industries.",
+      },
+      {
+        q: "Why should a business care if their AI partner is in the network?",
+        a: "It's a trust signal. It separates certified, vetted teams from those merely claiming AI expertise, so a business can choose an implementation partner with a verified standard and a direct line to Anthropic.",
+      },
+    ],
+  },
+  {
+    slug: "anthropic-academy-claude-certification-journey",
+    title: "Certifying on Claude: inside the Anthropic Academy learning path",
+    description:
+      "What it actually takes to certify on Claude through Anthropic Academy — the courses, what each one teaches, and why a team trained to this standard builds AI you can rely on.",
+    date: "2026-06-12",
+    dateLabel: "12 June 2026",
+    readingMinutes: 6,
+    category: "Engineering",
+    tags: ["Anthropic Academy", "Claude", "certification", "Model Context Protocol", "Claude Code", "Amazon Bedrock"],
+    tldr: "Certifying on Claude through Anthropic Academy means working through real coursework — building with the Claude API, the Model Context Protocol, agent skills, subagents and Claude Code. It's the difference between a team that's read about AI and one that's been trained and tested on it.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "It's easy to claim AI expertise. It's harder to sit the courses, build the projects and pass the assessments. As part of building a certified Claude practice at PeakRank, I've been working through Anthropic Academy's learning path — and it's worth showing what that actually involves, because the substance is the point.",
+      },
+      {
+        type: "h2",
+        text: "What the path covers",
+        id: "what-it-covers",
+      },
+      {
+        type: "p",
+        text: "The curriculum is hands-on and engineering-heavy, not a marketing overview. The modules span:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Building with the Claude API — the foundations of putting Claude into a real application.",
+          "The Model Context Protocol (introduction and advanced) — the open standard for connecting Claude to tools and data sources safely.",
+          "Introduction to Agent Skills and Subagents — composing Claude into structured, multi-step agentic workflows.",
+          "Claude Code in Action and Claude with Amazon Bedrock — using Claude in the developer workflow and deploying it on enterprise cloud infrastructure.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why the substance matters",
+        id: "why-substance",
+      },
+      {
+        type: "p",
+        text: "Each of these maps directly to how we build. The Claude API and Bedrock work underpins how PeakRank runs Claude in production; MCP is how an AI assistant gets safely grounded in a client's real data; agent skills and subagents are how you turn a single model call into a reliable workflow. Certification isn't a wall decoration — it's the same knowledge we apply on every build.",
+      },
+      {
+        type: "quote",
+        text: "The value of certification isn't the certificate. It's that the person deploying AI for you has actually been trained and tested on it.",
+      },
+      {
+        type: "h2",
+        text: "From learning to standard",
+        id: "to-standard",
+      },
+      {
+        type: "p",
+        text: "Anthropic Academy is also the foundation the wider PeakRank AI Academy draws on when we teach South African businesses to use Claude — the same rigour, passed along. Training the team to a recognised standard, and then teaching that standard onward, is how a small practice earns trust at scale.",
+      },
+      {
+        type: "p",
+        text: "Earning the Claude Certified Architect credential is the near-term milestone; building to the standard of the Claude Partner Network is the longer arc. Both come back to the same idea: do the work, then you can credibly say you've done it.",
+      },
+    ],
+    faq: [
+      {
+        q: "What does Anthropic Academy teach?",
+        a: "A hands-on, engineering-focused path covering building with the Claude API, the Model Context Protocol, agent skills and subagents, Claude Code, and deploying Claude on Amazon Bedrock.",
+      },
+      {
+        q: "Why does certification on Claude matter?",
+        a: "It means the person deploying AI for you has been trained and tested on the tool, not just read about it. At PeakRank the certification coursework maps directly to how we build in production.",
+      },
+      {
+        q: "What is the Claude Certified Architect credential?",
+        a: "It's a credential earned through Anthropic Academy's learning path. Shingi Mudyirwa is working toward it as part of building a certified Claude practice at PeakRank Digital.",
+      },
+    ],
+  },
+  {
+    slug: "peakrank-claude-partner-network-journey",
+    title: "From application to certification: building a Claude practice the disciplined way",
+    description:
+      "The honest, in-progress story of taking PeakRank down the Claude Partner Network path — application, approval, onboarding and certification — and what the programme's 'proof, not vibes' rigour teaches.",
+    date: "2026-06-13",
+    dateLabel: "13 June 2026",
+    readingMinutes: 6,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Claude Partner Network", "Anthropic", "build in public", "certification", "South Africa"],
+    tldr: "Taking PeakRank onto the Claude Partner Network path has meant applying, clearing review, onboarding through the partner portal and certifying the team — an ongoing journey, not a finished one. The throughline: the programme rewards proof, which forces a healthier way to build.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "This one is a build-in-public note. I'm partway through taking PeakRank Digital down the Claude Partner Network path, and rather than wait for a finished story, here's the honest middle of it — what the journey has involved so far and what it's teaching.",
+      },
+      {
+        type: "h2",
+        text: "The path so far",
+        id: "path-so-far",
+      },
+      {
+        type: "p",
+        text: "It's been a staged process, by design. An application, an initial review, approval to move forward, an invitation into the partner portal, accepting the network's terms, and then the real work: onboarding through the learning path and getting the team certified. None of it is a rubber stamp — each stage expects you to actually do something before the next unlocks.",
+      },
+      {
+        type: "h2",
+        text: "Proof, not vibes",
+        id: "proof-not-vibes",
+      },
+      {
+        type: "p",
+        text: "The thing I appreciate most is that the programme rewards hard evidence rather than marketing. Standing is measured against concrete things — certified people, real production work for customers, references that can be checked. You can't talk your way up; you have to show your work. That's an uncomfortable, healthy discipline, and it quietly makes you a better firm whether or not anyone's watching.",
+      },
+      {
+        type: "quote",
+        text: "A programme that rewards proof over polish forces you to become the thing you'd otherwise just claim to be.",
+      },
+      {
+        type: "h2",
+        text: "Where we are, honestly",
+        id: "where-we-are",
+      },
+      {
+        type: "p",
+        text: "We're on the path, not at the summit. I'm being deliberately careful not to overstate the milestone — there's a real difference between doing the work toward a standard and having formally arrived, and I'd rather be accurate than impressive. When we reach the next milestone, I'll share it properly.",
+      },
+      {
+        type: "h2",
+        text: "Where it's going",
+        id: "where-its-going",
+      },
+      {
+        type: "p",
+        text: "The destination is a recognised, accountable Claude practice serving South African and African businesses — and a place in an ecosystem that's only going to get more important as AI moves into production everywhere. The disciplined route is the slower one in the short term and the only durable one in the long term. That trade is the whole strategy.",
+      },
+    ],
+    faq: [
+      {
+        q: "Is PeakRank Digital in the Claude Partner Network?",
+        a: "PeakRank is on the Claude Partner Network path — having applied, cleared initial review, onboarded through the partner portal and begun certifying the team. It's an in-progress journey toward the programme's tiers, not a completed milestone.",
+      },
+      {
+        q: "What does the Claude Partner Network journey involve?",
+        a: "A staged process: application, initial review, approval to move forward, partner-portal onboarding, accepting the network terms, and certifying the team through Anthropic Academy — each stage requiring real work before the next.",
+      },
+      {
+        q: "What does the programme reward?",
+        a: "Concrete proof rather than marketing — certified practitioners, real production deployments for customers, and checkable references — so standing is earned through demonstrated work.",
+      },
+    ],
+  },
+  {
+    slug: "certified-claude-practice-client-benefits",
+    title: "What a certified Claude practice means for your business",
+    description:
+      "Working with a team certified on Claude and plugged into Anthropic's ecosystem changes what you can expect — lower risk, faster adoption and a real standard behind the work. The client's-eye view.",
+    date: "2026-06-14",
+    dateLabel: "14 June 2026",
+    readingMinutes: 6,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Claude", "AI adoption", "client benefits", "POPIA", "South Africa"],
+    tldr: "For a client, a certified Claude practice means working with people trained and tested on the exact tool they're deploying for you, backed by a connection to Anthropic's ecosystem and a discipline for accuracy and data safety. It's the difference between adopting AI with a qualified partner and improvising with a generalist.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Most of this series has been about our side of the work — why we're certifying, what the programme is, what the journey involves. This last one flips it around: what does any of it actually get you, the client?",
+      },
+      {
+        type: "h2",
+        text: "Lower risk on the thing that's easy to get wrong",
+        id: "lower-risk",
+      },
+      {
+        type: "p",
+        text: "AI is easy to deploy badly. The failure modes — confident wrong answers, leaked data, brittle workflows — are exactly the things a trained team knows how to prevent. Working with a certified Claude practice means the people building your solution have been tested on the tool, follow a discipline for grounding answers in real data, and treat accuracy and POPIA-aligned data safety as defaults, not afterthoughts.",
+      },
+      {
+        type: "h2",
+        text: "A direct line to the ecosystem",
+        id: "ecosystem",
+      },
+      {
+        type: "p",
+        text: "Being plugged into Anthropic's partner ecosystem means access to resources, support and up-to-date practice that a disconnected agency simply doesn't have. When something is new or changing — and in AI, it always is — that connection is the difference between current advice and stale advice.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Solutions built on current Anthropic guidance, not last year's blog posts.",
+          "Access to support and resources reserved for firms in the ecosystem.",
+          "A team that can teach your people to use Claude too, through the PeakRank AI Academy.",
+          "Accountability to an external standard, not just our own word.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "You're not just hiring a vendor's opinion. You're hiring a team accountable to a standard bigger than the invoice.",
+      },
+      {
+        type: "h2",
+        text: "Faster, safer adoption",
+        id: "adoption",
+      },
+      {
+        type: "p",
+        text: "Put together, it adds up to adopting AI faster and with less risk. You skip the expensive learning curve of a team figuring it out on your project, and you get a partner whose incentives are aligned with doing it properly — because their standing in the network depends on real results for customers like you.",
+      },
+      {
+        type: "p",
+        text: "If that's the kind of partner you want for your AI adoption, that's exactly what we're building PeakRank to be. The fastest way to start is a conversation, or a free GEO audit at peakrank.co.za.",
+      },
+    ],
+    faq: [
+      {
+        q: "What does a client get from a certified Claude practice?",
+        a: "Lower risk from a team trained and tested on the tool, a discipline for accuracy and data safety, a direct line to Anthropic's ecosystem and resources, and accountability to an external standard rather than just the firm's own word.",
+      },
+      {
+        q: "How does this make AI adoption safer?",
+        a: "A certified team knows the failure modes — confident wrong answers, data leakage, brittle workflows — and prevents them, grounding answers in real data and treating accuracy and POPIA-aligned data safety as defaults.",
+      },
+      {
+        q: "Does PeakRank also train client teams on Claude?",
+        a: "Yes. Through the PeakRank AI Academy, the practice teaches client teams to use Claude themselves, passing on the same standard it certifies to.",
+      },
+    ],
+  },
 ];
 
 // ── Scheduled publishing ──────────────────────────────────────────────

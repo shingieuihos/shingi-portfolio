@@ -350,8 +350,10 @@ function Certifications() {
       title="Credentialed in cloud."
     >
       <p className="text-foreground/70 max-w-2xl mb-10">
-        AWS-issued knowledge badges, verifiable on Credly. Currently training
-        toward becoming a Claude Certified Architect through Anthropic Academy.
+        AWS-issued knowledge badges, verifiable on Credly. Beyond cloud, I&apos;m
+        building a certified Claude practice at PeakRank Digital — training toward
+        Claude Certified Architect through Anthropic Academy and on the path to the
+        Claude Partner Network.
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         {badges.map((b) => (
