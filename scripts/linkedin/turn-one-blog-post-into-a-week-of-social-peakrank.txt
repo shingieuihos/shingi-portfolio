@@ -1,0 +1,18 @@
+You spent real effort on an article. Then you shared it once, on one platform, and moved on.
+
+That's the most common content mistake there is. A single good article is a week of social posts: the headline insight, the surprising stat, the contrarian take, the practical how-to.
+
+In PeakRank you hand the tool a published URL, pick your platforms, and Claude drafts posts tuned to each — professional for LinkedIn, punchy for X, conversational for Facebook, caption-style for Instagram.
+
+Then the part you can't delegate:
+→ keep the structure, cut the generic
+→ add the real number ("~1,400 → ~12,700 monthly visitors" beats "grew the audience")
+→ space them out — one a day is a week of presence
+→ lead with the line you'd want screenshotted
+
+Full transparency: this very series is the worked example. Every post is cross-posted to LinkedIn with exactly this workflow — Claude drafts, I edit, one article becomes a week.
+
+Here's how to run it 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

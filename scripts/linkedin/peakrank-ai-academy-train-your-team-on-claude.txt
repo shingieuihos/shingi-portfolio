@@ -1,0 +1,21 @@
+There are two ways to benefit from AI. You can hire someone who's good at it — or you can become good at it.
+
+PeakRank offers both. The second is the AI Academy.
+
+Handing a team a powerful model without teaching them to use it is how organisations get burned. The failure modes are predictable:
+→ confident wrong answers nobody checked
+→ leaked data from careless prompts
+→ brittle workflows that break the moment a task shifts
+
+None of those are the model's fault. They're skill gaps — and skill gaps are what training closes.
+
+We teach teams to use Claude the way we use it internally:
+→ Anthropic's 4 Ds — Delegation, Description, Discernment, Diligence — as habits
+→ grounding over guessing
+→ data safety by default, with POPIA in mind
+→ workflows that hold
+
+The agency makes you visible. The Academy makes you capable. In a market this early, the businesses that learn to run on AI now will be the ones competitors can't catch 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

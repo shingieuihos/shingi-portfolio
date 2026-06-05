@@ -1,0 +1,18 @@
+A dashboard that just shows numbers is a liability. It makes you feel informed without making you act.
+
+So when I built the PeakRank dashboard, I gave it one rule: every panel has to end in a next action.
+
+→ Visibility score → watch the trend, not the absolute
+→ AI citations → sort by "competitor cited, you absent" — that's your roadmap
+→ Content briefs → ship the top one this week
+→ Social → turn one article into a week of posts
+→ Per-domain assistant → ask "what are my three best moves?"
+
+Read top to bottom, it's a loop: see your visibility, find the gaps, get the brief, publish, amplify, ask what's next. Run weekly, that loop took whatthewordsays.org from ~1,400 to ~12,700 monthly visitors in a year.
+
+I didn't want a prettier scoreboard. I wanted a tool that tells you the three things to do next — and starts them.
+
+Panel-by-panel tour 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

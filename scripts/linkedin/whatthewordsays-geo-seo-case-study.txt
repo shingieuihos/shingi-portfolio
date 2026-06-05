@@ -1,0 +1,17 @@
+I don't have a pitch for GEO + SEO. I have a client's traffic graph.
+
+whatthewordsays.org is a PeakRank client. Here are its real, server-logged numbers:
+
+→ May 2025: 1,439 monthly unique visitors
+→ May 2026: 12,708 — about 8.8× year-on-year
+→ All of 2025: 19,169 unique visitors
+→ First five months of 2026: 38,334 — already double the entire prior year
+
+The content engine didn't change overnight. What changed is that the same good content finally became findable AND citable — across both Google and the AI answer engines people now ask first.
+
+The how, in one breath: fix the technical foundation, restructure content to be quoted (not just ranked), monitor which AI engines cite you, and turn the site's own data into a weekly to-do list. Claude does the reading and first drafts at speed; a human owns every decision.
+
+Full case study, with the month-by-month table 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

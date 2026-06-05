@@ -1,0 +1,20 @@
+AI citation monitoring is one of the most valuable things PeakRank does — and one of the easiest to use badly.
+
+Pointed well, it tells you exactly where to win. Pointed lazily, it's a dashboard nobody acts on.
+
+The biggest lever is the question list. Skip vanity terms. Track:
+→ buying-intent questions ("best X in [city]", "who should I hire for Y")
+→ the problem questions your product quietly solves
+→ comparison and "alternatives to [competitor]" queries
+
+Then read the pattern, not just yes/no:
+→ you cited consistently → defend it
+→ competitor cited, you absent → your highest-value gap
+→ nobody cited → open ground, usually the cheapest win
+
+Claude reads the ChatGPT, Perplexity, Gemini and AI-Overview answers and extracts who got cited, at a scale no manual check can match. A human turns each gap into a page engineered to be quoted.
+
+The brands models cite today become the defaults they reach for tomorrow. Measure your share now — while competitors aren't even looking 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

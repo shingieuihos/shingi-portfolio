@@ -1,0 +1,18 @@
+Most "SEO strategies" are a list of tactics with no calendar. Here's the opposite — the 90-day plan behind a ~9× year.
+
+It's the same loop that grew whatthewordsays.org from ~1,400 to ~12,700 monthly unique visitors.
+
+Weeks 1–2 — baseline & foundation: run the audit (Claude maps your citations), fix crawlability/speed/structure, connect GSC, GA4 and Ads.
+
+Weeks 3–6 — close the gaps: pick the questions where a competitor is cited and you're absent; Claude drafts the brief; you ship one citable page a week.
+
+Weeks 7–10 — amplify & monitor: turn each article into a week of social, track citation share, ask the assistant for your three best moves.
+
+Weeks 11–12 — review & double down: read the trend, keep what worked, set next quarter's gaps.
+
+whatthewordsays.org didn't get a viral spike. It ran this loop — and by early June 2026 had already drawn 38,334 unique visitors, double its entire 2025 total. That's compounding.
+
+The full week-by-week playbook 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

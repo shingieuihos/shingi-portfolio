@@ -1,0 +1,18 @@
+Most SEO tools share one flaw: they show you what happened, then leave the hardest part — what it means and what to do — entirely to you.
+
+So I built the opposite into PeakRank: an assistant that answers from YOUR data, not a blog post it read once.
+
+It's grounded in a single domain's real rankings, citations and traffic. That grounding is the whole point — a general chatbot invents a plausible trend; a grounded one tells you what your data actually says, and flags when the data is thin.
+
+The questions worth asking it:
+→ Why did my traffic change last week?
+→ What should I publish next?
+→ Which page is closest to ranking and worth refreshing?
+→ Where am I losing to a competitor in AI answers?
+
+When whatthewordsays.org jumped from 6,746 to 12,708 monthly visitors in a month, the useful question wasn't "did it go up?" The chart shows that. It was "what drove the step-change, so we do more of it?"
+
+That's what it answers. POPIA-aware by design 👇
+
+#GEO #SEO #AISearch #Claude #SouthAfrica
+@ClaudeforBusiness @PeakRank.co.za

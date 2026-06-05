@@ -1317,6 +1317,599 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "whatthewordsays-geo-seo-case-study",
+    title: "The numbers behind a ~9× year: a PeakRank client's growth graph",
+    description:
+      "A real PeakRank client, whatthewordsays.org, grew from ~1,400 to ~12,700 monthly unique visitors in a year. Here are the actual figures and the playbook behind them.",
+    date: "2026-06-15",
+    dateLabel: "15 June 2026",
+    readingMinutes: 6,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Case study", "GEO", "SEO", "Results", "South Africa"],
+    tldr: "whatthewordsays.org, a PeakRank client, went from 1,439 monthly unique visitors in May 2025 to 12,708 in May 2026 — about 8.8× — and drew 38,334 unique visitors in the first five months of 2026, already double its entire 2025 total. The lever was a disciplined GEO + SEO programme with Claude as the engine.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "The best argument for a GEO + SEO programme isn't a pitch — it's a client's traffic graph. So here's one, with the real numbers behind it. whatthewordsays.org is a South African scripture-commentary publisher and a PeakRank client. A year ago it had a small, loyal audience. Today it pulls a five-figure monthly audience and is still climbing.",
+      },
+      {
+        type: "h2",
+        text: "The numbers, straight from the server logs",
+        id: "numbers",
+      },
+      {
+        type: "p",
+        text: "These are unique-visitor counts from the site's own AWStats — not estimates. May 2025: 1,439 unique visitors. May 2026: 12,708. That's about 8.8× year-on-year. And the whole of 2025 brought 19,169 unique visitors; by early June 2026 the site had already drawn 38,334 — double the prior year in under half the time.",
+      },
+      {
+        type: "quote",
+        text: "The content engine didn't change overnight. What changed is that the same good content finally became findable — and citable — across both Google and the AI answer engines people now ask first.",
+      },
+      {
+        type: "h2",
+        text: "What we actually did",
+        id: "what-we-did",
+      },
+      {
+        type: "ul",
+        items: [
+          "Fixed the technical foundation — crawlability, speed, headings and structured data on every article, so engines can extract clear, attributable claims.",
+          "Restructured content to be citable, not just rankable — direct answers up top, question-shaped headings, consistent entities. Claude drafts the structure; a human verifies every claim.",
+          "Monitored who the AI engines recommend — Claude reads the ChatGPT, Perplexity, Gemini and AI-Overview answers and extracts who got cited, turning each gap into a brief.",
+          "Turned the site's own data into a weekly to-do list via the per-domain assistant, so the client worked a short, specific list each week instead of guessing.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The honest version: none of this is one big move. It's a few disciplined levers run consistently, with Claude doing the reading and first drafts at speed and a human owning every decision that reaches the client. I wrote up the customer-facing version of this case study on the PeakRank blog — the link's below.",
+      },
+    ],
+    faq: [
+      {
+        q: "How much did whatthewordsays.org grow with PeakRank?",
+        a: "From 1,439 monthly unique visitors in May 2025 to 12,708 in May 2026 — about 8.8× year-on-year. In the first five months of 2026 it drew 38,334 unique visitors, more than double its entire 2025 total of 19,169.",
+      },
+      {
+        q: "Was this paid traffic or a viral spike?",
+        a: "Neither. It was organic growth from a combined GEO + SEO programme — technical fixes, citable content, AI citation monitoring and weekly data-driven prioritisation — compounding month over month.",
+      },
+      {
+        q: "Where can I read the full case study?",
+        a: "The customer-facing write-up, with the month-by-month table, is on the PeakRank Digital blog at peakrank.co.za/blog/whatthewordsays-geo-seo-case-study.",
+      },
+    ],
+  },
+  {
+    slug: "how-to-run-your-first-free-geo-audit-peakrank",
+    title: "What a free GEO audit actually checks (and why I start every client with one)",
+    description:
+      "Every PeakRank engagement starts with a free GEO audit. Here's what Claude does behind that single domain input, and how I read the result.",
+    date: "2026-06-16",
+    dateLabel: "16 June 2026",
+    readingMinutes: 5,
+    category: "GEO",
+    tags: ["PeakRank Digital", "GEO", "AI search", "Claude", "Getting started"],
+    tldr: "A PeakRank GEO audit takes a domain, generates the buying-intent questions your customers ask, puts them to ChatGPT, Perplexity, Gemini and Google AI Overviews, and reports who gets cited — you, a competitor, or nobody. Claude does the reading; the output is a prioritised map of where to win.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "I start every PeakRank engagement the same way: with a free GEO audit. It's the lowest-commitment way to show a business owner something they've usually never seen — what the AI answer engines actually say about them. Here's what's happening behind that one domain input.",
+      },
+      {
+        type: "h2",
+        text: "What Claude does in the background",
+        id: "behind-the-scenes",
+      },
+      {
+        type: "ul",
+        items: [
+          "Generates the real buying-intent questions your customers ask — not vanity keywords.",
+          "Puts those questions to ChatGPT, Perplexity, Gemini and Google AI Overviews and reads every answer.",
+          "Extracts who got cited: you, a competitor, or nobody at all.",
+          "Checks the technical and content signals that decide whether an engine can quote you in the first place.",
+        ],
+      },
+      {
+        type: "p",
+        text: "That's days of manual work compressed into minutes. Claude reads and classifies at a volume no person can; I review the output before it reaches anyone.",
+      },
+      {
+        type: "h2",
+        text: "How I read the result",
+        id: "reading-it",
+      },
+      {
+        type: "p",
+        text: "I don't fixate on the headline visibility score. I read the breakdown: where you're already cited (defend it), where a competitor is cited and you're absent (your highest-value gaps), and where nobody is cited (open ground, usually the cheapest wins). A low score isn't bad news — it's a map.",
+      },
+      {
+        type: "quote",
+        text: "Every gap is a question your future customers are already asking an AI, with your name absent from the answer. That's the most actionable thing in marketing.",
+      },
+      {
+        type: "p",
+        text: "The full step-by-step — how to run it and read every panel — is on the PeakRank blog, linked below.",
+      },
+    ],
+    faq: [
+      {
+        q: "Is the GEO audit really free?",
+        a: "Yes — the first audit is free and needs no payment details. It shows where you stand across Google and the major AI answer engines.",
+      },
+      {
+        q: "What makes the audit different from a normal SEO audit?",
+        a: "It measures AI citation — whether ChatGPT, Perplexity, Gemini and AI Overviews actually recommend you — not just Google rankings. That's the layer most audits miss.",
+      },
+    ],
+  },
+  {
+    slug: "peakrank-dashboard-tour-turn-data-into-your-next-move",
+    title: "I built the PeakRank dashboard around one rule: every panel ends in an action",
+    description:
+      "A builder's note on the PeakRank dashboard — why each panel exists, and the single next move it's designed to hand you instead of another vanity chart.",
+    date: "2026-06-17",
+    dateLabel: "17 June 2026",
+    readingMinutes: 5,
+    category: "Engineering",
+    tags: ["PeakRank Digital", "Product", "Dashboard", "GEO", "SEO"],
+    tldr: "The PeakRank dashboard is built so every panel ends in a next action: visibility score (watch the trend), AI citations (find the gaps), content briefs (close them), social (amplify), and a Claude-powered per-domain assistant (ask what's next). It's a loop, not a wall of charts.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "A dashboard that just shows numbers is a liability — it makes you feel informed without making you act. When I built the PeakRank dashboard I gave it one rule: every panel has to end in a next action. Here's the short tour from the builder's side.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Visibility score — one number for your presence across Google and AI answers. Action: watch the trend, not the absolute.",
+          "AI citations — which questions cite you, a competitor, or nobody. Action: sort by 'competitor cited, you absent' — that's your roadmap.",
+          "Content briefs — each gap becomes a GEO-ready brief Claude drafts. Action: ship the top one this week.",
+          "Social — turn a published URL into platform-tuned posts. Action: generate a week of social from one article.",
+          "Per-domain assistant — ask plain questions of your own data. Action: end each week asking 'what are my three best moves?'",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Why a loop, not a report",
+        id: "the-loop",
+      },
+      {
+        type: "p",
+        text: "Read top to bottom, the dashboard is a loop: see your visibility, find the citation gaps, get the brief, publish, amplify on social, ask the assistant what's next. That loop — run weekly — is exactly what drove whatthewordsays.org from ~1,400 to ~12,700 monthly visitors in a year.",
+      },
+      {
+        type: "quote",
+        text: "I didn't want a prettier scoreboard. I wanted a tool that ends every week by telling you the three things to do next — and starts them.",
+      },
+    ],
+    faq: [
+      {
+        q: "Do I need technical skills to use the dashboard?",
+        a: "No. It's built for owners and marketers — every panel ends in a plain-language action, and the per-domain assistant answers in normal English.",
+      },
+      {
+        q: "What powers the smart parts?",
+        a: "Anthropic's Claude reads and classifies AI answers, drafts content briefs, and powers the per-domain assistant that turns raw data into recommendations.",
+      },
+    ],
+  },
+  {
+    slug: "get-the-best-from-ai-citation-monitoring-peakrank",
+    title: "Citation monitoring is easy to run badly — here's how I point it",
+    description:
+      "AI citation monitoring only pays off if you track the right questions and act on the gaps. A field note on running it the way clients who get results do.",
+    date: "2026-06-18",
+    dateLabel: "18 June 2026",
+    readingMinutes: 5,
+    category: "GEO",
+    tags: ["PeakRank Digital", "GEO", "AI citations", "Claude", "Strategy"],
+    tldr: "Citation monitoring measures the new scoreboard: when someone asks an AI engine a question in your market, are you the source it quotes? The value comes from tracking buying-intent questions, reading citation share (not just presence), and turning every gap into a page engineered to be quoted.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Citation monitoring is one of the most valuable things PeakRank does — and one of the easiest to use badly. Pointed well, it tells you exactly where to win. Pointed lazily, it produces a dashboard nobody acts on.",
+      },
+      {
+        type: "h2",
+        text: "Track the right questions",
+        id: "right-questions",
+      },
+      {
+        type: "p",
+        text: "The biggest lever is the question list. Skip vanity terms. Track buying-intent questions ('best X in [city]', 'who should I hire for Y'), the problem questions your product solves, and comparison or 'alternatives to [competitor]' queries — the highest-intent territory there is. Claude helps generate them, but you prune to the ones that actually precede a sale.",
+      },
+      {
+        type: "h2",
+        text: "Read share, then close gaps",
+        id: "share-and-gaps",
+      },
+      {
+        type: "p",
+        text: "Don't stop at cited yes/no. Read the pattern: you cited consistently (defend it), competitor cited and you absent (your top gap), nobody cited (open ground). Then close the gaps with pages engineered to be quoted — direct answer up top, question-shaped headings, consistent entities, FAQ and schema. Claude drafts; a human adds the real numbers and verifies, because unedited AI filler loses trust with readers and engines alike.",
+      },
+      {
+        type: "quote",
+        text: "The brands models cite today become the defaults they reach for tomorrow. Measuring your citation share now — while most competitors aren't even looking — is how you claim that default before it hardens around someone else.",
+      },
+    ],
+    faq: [
+      {
+        q: "Why does citation monitoring matter if I rank on Google?",
+        a: "A growing share of searches end inside an AI answer the user never clicks past. If you're not named there, your ranking didn't help. Citation monitoring measures that invisible layer.",
+      },
+      {
+        q: "How does PeakRank read the citations?",
+        a: "Claude reads the answers the engines give to your customers' questions and extracts who was cited, at a scale and consistency manual checks can't match. A human reviews the findings.",
+      },
+    ],
+  },
+  {
+    slug: "per-domain-ai-assistant-ask-your-search-data-peakrank",
+    title: "An assistant that answers from your data, not a blog post it read once",
+    description:
+      "Most SEO tools hand you charts and leave the thinking to you. A note on PeakRank's grounded, per-domain assistant — and why grounding is the whole point.",
+    date: "2026-06-19",
+    dateLabel: "19 June 2026",
+    readingMinutes: 5,
+    category: "Engineering",
+    tags: ["PeakRank Digital", "Claude", "AI assistant", "Product"],
+    tldr: "PeakRank's per-domain assistant is a Claude-powered assistant grounded in one domain's real search data. Because it answers from your data — not generic training — it gives specific next steps and says so when the data is thin, instead of inventing a trend to please you.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Most SEO tools share a flaw: they show what happened and leave the hardest part — what it means and what to do — to you. The per-domain assistant I built into PeakRank exists to close that gap. It answers questions about your site, from your data, in plain English.",
+      },
+      {
+        type: "h2",
+        text: "Why 'per-domain' matters",
+        id: "grounding",
+      },
+      {
+        type: "p",
+        text: "It's not a generic chatbot you ask for SEO tips. It's grounded in a specific domain's rankings, citations and traffic, so it answers from what's true for you. That grounding is the point: a general model will invent a plausible trend; a grounded one tells you what your data says, and flags when the data is thin.",
+      },
+      {
+        type: "h2",
+        text: "The questions worth asking it",
+        id: "questions",
+      },
+      {
+        type: "ul",
+        items: [
+          "Why did my traffic change last week? — it correlates the move with ranking and citation shifts.",
+          "What should I publish next? — it reads your gaps and picks the highest-value topic.",
+          "Which page is closest to ranking and worth refreshing? — often a faster win than writing new.",
+          "Where am I losing to a competitor in AI answers? — the specific questions where you're absent.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Take whatthewordsays.org: its audience jumped from 6,746 unique visitors in April to 12,708 in May. The useful question isn't 'did it go up?' — the chart shows that. It's 'which content and citations drove the step-change, so we do more of it?' That's what the assistant answers from the underlying data.",
+      },
+      {
+        type: "quote",
+        text: "The goal isn't a smarter dashboard. It's ending every week knowing your three best next moves — and starting them.",
+      },
+    ],
+    faq: [
+      {
+        q: "How is this different from asking ChatGPT for SEO tips?",
+        a: "A general chatbot doesn't know your data, so its advice is generic. The per-domain assistant is grounded in your actual rankings, citations and traffic, so its answers are specific to your site.",
+      },
+      {
+        q: "Is my data safe?",
+        a: "Yes — PeakRank is built POPIA-aware: what the assistant can see, why, and with what consent is part of the design, and it's grounded so it answers from your data rather than guessing.",
+      },
+    ],
+  },
+  {
+    slug: "turn-one-blog-post-into-a-week-of-social-peakrank",
+    title: "One article is a week of social posts — if you stop sharing it once",
+    description:
+      "A field note on PeakRank's Claude-powered social generator: how one published URL becomes a week of platform-tuned posts, and the human edit that makes them land.",
+    date: "2026-06-20",
+    dateLabel: "20 June 2026",
+    readingMinutes: 4,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Content", "Social media", "Claude", "Workflow"],
+    tldr: "PeakRank's social tool takes a published URL and has Claude draft posts tuned to LinkedIn, X, Facebook and Instagram. Keep the structure, cut the generic, add the real number, and space them out — one article becomes a week of presence. This very series is cross-posted to LinkedIn exactly that way.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "You spent real effort on an article, shared it once on one platform, and moved on. That's the most common content mistake there is — and it's the one PeakRank's social generator fixes. A single good article contains a week of posts: the headline insight, the surprising stat, the contrarian take, the practical how-to.",
+      },
+      {
+        type: "p",
+        text: "Give the tool a published URL and pick your platforms; Claude reads the page and drafts posts tuned to each — professional for LinkedIn, punchy for X, conversational for Facebook, caption-style for Instagram.",
+      },
+      {
+        type: "h2",
+        text: "The part you can't delegate",
+        id: "human-edit",
+      },
+      {
+        type: "ul",
+        items: [
+          "Keep the structure, cut the generic — delete anything that could describe any business.",
+          "Add the real number — 'grew from ~1,400 to ~12,700 monthly visitors' beats 'grew the audience'.",
+          "Space them out — one a day is a week of presence from one article.",
+          "Lead with the line you'd want screenshotted, then let the rest support it.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "This series is the worked example: every PeakRank post is cross-posted to LinkedIn with exactly this workflow — Claude drafts, I edit, one article becomes a week of presence.",
+      },
+    ],
+    faq: [
+      {
+        q: "Will the posts sound AI-written?",
+        a: "Only if you skip the edit. They're a fast first draft — keep the structure Claude gives you, cut the generic, and add the specific detail and voice only you have.",
+      },
+      {
+        q: "Which platforms are supported?",
+        a: "LinkedIn, X, Facebook and Instagram, each with its own format and hashtag style.",
+      },
+    ],
+  },
+  {
+    slug: "which-peakrank-offering-is-right-for-you",
+    title: "Free tools or managed growth? An honest way to choose",
+    description:
+      "Not everyone needs the biggest package. A straight guide to matching a PeakRank offering to your stage — and the one rule I use to decide.",
+    date: "2026-06-21",
+    dateLabel: "21 June 2026",
+    readingMinutes: 4,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Pricing", "Getting started", "Strategy"],
+    tldr: "Everyone starts with the free GEO audit. If your scarcest resource is money, take the free tools and trade your time. If it's time, take managed growth and trade money for speed. You can move between them — most businesses do.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "The right PeakRank offering isn't the biggest one — it's the one that matches where your business actually is. Here's how I'd choose, with no pressure to over-buy.",
+      },
+      {
+        type: "p",
+        text: "Whoever you are, start with the free GEO audit. You can't choose a path before you've seen the map: where you stand across Google and the AI engines, where competitors beat you, and where the open ground is.",
+      },
+      {
+        type: "h2",
+        text: "Then pick your path",
+        id: "paths",
+      },
+      {
+        type: "ul",
+        items: [
+          "Free tools — for the hands-on operator with marketing capacity in-house who wants direction more than delivery. Even here, Claude does the reading that used to require an agency.",
+          "Managed growth — for the owner who wants the hours back. PeakRank runs the programme; Claude is the engine; a human owns every decision. This is the path whatthewordsays.org took to ~8.8× growth.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "If your scarcest resource is money, trade your time on the free path. If it's time, trade money for speed with managed growth. Either way, the audit comes first.",
+      },
+      {
+        type: "p",
+        text: "Most businesses don't pick once and freeze. They start free, prove the model, and step up when their own capacity becomes the bottleneck. There's no wrong order — only the wrong package for today.",
+      },
+    ],
+    faq: [
+      {
+        q: "Do I have to pay to start?",
+        a: "No. Start with the free tools and a free GEO audit. Paid managed growth is for when you want PeakRank to execute the programme for you.",
+      },
+      {
+        q: "Which should a small business choose?",
+        a: "Run the free audit regardless of size. Execute it yourself with the free tools if you have the time and skills; step up to managed growth if you'd rather buy back the hours.",
+      },
+    ],
+  },
+  {
+    slug: "connect-search-console-ga4-google-ads-to-peakrank",
+    title: "The insight is in the seams: connecting GSC, GA4 and Ads",
+    description:
+      "Rankings, behaviour and spend each tell half a story. A note on why connecting all three to PeakRank lets Claude reason about cause instead of guessing.",
+    date: "2026-06-22",
+    dateLabel: "22 June 2026",
+    readingMinutes: 4,
+    category: "Engineering",
+    tags: ["PeakRank Digital", "Integrations", "Analytics", "Google", "Claude"],
+    tldr: "Search Console shows queries and rankings, GA4 shows on-site behaviour, Google Ads shows spend. Connect all three to PeakRank via OAuth and Claude can reason across them — turning three separate charts into one line of cause-and-effect you can act on.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "PeakRank can tell you a lot from a domain alone. But the clients who get the most connect their Google data, because the full picture lives across three tools that rarely talk to each other.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Search Console — the queries and rankings that bring people to you, but nothing about what they do next.",
+          "GA4 — what visitors do once they arrive, but not which query or AI answer sent them.",
+          "Google Ads — what you pay for and what it returns, in isolation from your organic and AI visibility.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Each is useful; none is complete. The insight is almost always in the seams. Connecting them in PeakRank takes minutes via Google's official OAuth — you authorise, you don't hand over passwords, credentials are encrypted, and it's POPIA-aware about what it reads and why.",
+      },
+      {
+        type: "h2",
+        text: "What the unified view unlocks",
+        id: "unified",
+      },
+      {
+        type: "p",
+        text: "With all three connected, Claude stops looking at three charts and starts reasoning in one line: 'this page ranks and gets cited but GA4 says visitors bounce — fix the page, not the visibility', or 'we're paying for a query we now rank for and get cited on — cut the spend, keep the result'.",
+      },
+      {
+        type: "quote",
+        text: "One source tells you what happened. Three sources, reasoned together, tell you why — and why is the only thing you can act on.",
+      },
+    ],
+    faq: [
+      {
+        q: "Is connecting my Google accounts safe?",
+        a: "Yes — connections use Google's official OAuth, credentials are encrypted, and PeakRank is POPIA-aware about what it reads. You can disconnect anytime.",
+      },
+      {
+        q: "Why connect all three instead of one?",
+        a: "Each tells half a story. Together they let PeakRank and Claude reason about cause and effect rather than guess from a single metric.",
+      },
+    ],
+  },
+  {
+    slug: "peakrank-ai-academy-train-your-team-on-claude",
+    title: "The agency makes you visible; the Academy makes you capable",
+    description:
+      "Why PeakRank runs an AI Academy alongside the agency — teaching teams to use Claude with the same disciplines we run internally, POPIA included.",
+    date: "2026-06-23",
+    dateLabel: "23 June 2026",
+    readingMinutes: 4,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "AI Academy", "Training", "Claude", "South Africa"],
+    tldr: "There are two ways to benefit from AI: hire someone good at it, or become good at it. The PeakRank AI Academy teaches the second — using Claude with Anthropic's 4 Ds, grounding over guessing, and POPIA-aware data safety: the same disciplines behind every client result.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "There are two ways to benefit from AI. You can hire someone who's good at it, or you can become good at it. PeakRank offers both — and the second is the AI Academy.",
+      },
+      {
+        type: "p",
+        text: "Handing a team a powerful model without teaching them to use it is how organisations get burned. The failure modes are predictable: confident wrong answers nobody checked, leaked data from careless prompts, brittle workflows that break the moment a task shifts. None of those are the model's fault — they're skill gaps, and skill gaps are what training closes.",
+      },
+      {
+        type: "h2",
+        text: "What we teach",
+        id: "what-we-teach",
+      },
+      {
+        type: "ul",
+        items: [
+          "The 4 Ds in practice — Delegation, Description, Discernment, Diligence — as habits, not theory.",
+          "Grounding over guessing — giving Claude the right context so it answers from your reality.",
+          "Data safety by default — what to put in front of an AI and what to hold back, with POPIA in mind.",
+          "Workflows that hold — turning one-off prompts into repeatable processes a team can rely on.",
+        ],
+      },
+      {
+        type: "quote",
+        text: "The agency makes you visible. The Academy makes you capable. In a market this early, the businesses that learn to run on AI now will be the ones competitors can't catch.",
+      },
+      {
+        type: "p",
+        text: "This isn't theory we read once — it's the operating discipline behind every client result, including whatthewordsays.org. The Academy just teaches your team to run the same playbook.",
+      },
+    ],
+    faq: [
+      {
+        q: "Who is the Academy for?",
+        a: "Owners, marketers and operators who want their team to use AI well — not just experiment with chatbots — and to avoid the common failure modes.",
+      },
+      {
+        q: "How does it relate to the agency services?",
+        a: "The agency makes you visible across Google and AI search; the Academy makes your team capable of running on AI themselves. Many clients use both.",
+      },
+    ],
+  },
+  {
+    slug: "90-day-geo-seo-playbook-peakrank",
+    title: "The 90-day playbook behind a ~9× year",
+    description:
+      "The repeatable, week-by-week GEO + SEO programme PeakRank runs for clients — with the Claude-powered steps that grew whatthewordsays.org roughly 8.8× in a year.",
+    date: "2026-06-24",
+    dateLabel: "24 June 2026",
+    readingMinutes: 6,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Playbook", "GEO", "SEO", "Results"],
+    tldr: "A concrete 90-day plan: weeks 1–2 baseline and fix the foundation, weeks 3–6 close the top citation gaps with citable content, weeks 7–10 amplify and monitor, weeks 11–12 review and double down. Claude does the reading and drafting at each step; a human owns the decisions. It's the loop behind whatthewordsays.org's growth.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Most 'SEO strategies' are a list of tactics with no calendar. This is the opposite — a concrete 90-day plan you can run week by week. It's the same playbook that grew whatthewordsays.org from ~1,400 to ~12,700 monthly unique visitors in a year.",
+      },
+      {
+        type: "h2",
+        text: "Weeks 1–2: baseline and foundation",
+        id: "weeks-1-2",
+      },
+      {
+        type: "p",
+        text: "Run the GEO audit (Claude reads the engines and maps your citations), fix the foundation — crawlability, speed, headings, structured data — and connect Search Console, GA4 and Ads so the programme is steered by cause, not guesswork. Milestone: a baseline score and a prioritised gap list.",
+      },
+      {
+        type: "h2",
+        text: "Weeks 3–6: close the highest-value gaps",
+        id: "weeks-3-6",
+      },
+      {
+        type: "p",
+        text: "Pick the gaps where a competitor is cited and you're absent. Claude turns each into a GEO-ready brief; you publish citable pages — direct answer up top, question-shaped headings, FAQ and schema. Ship one strong page a week; cadence beats perfection. Milestone: your first new AI citations.",
+      },
+      {
+        type: "h2",
+        text: "Weeks 7–10: amplify and monitor",
+        id: "weeks-7-10",
+      },
+      {
+        type: "p",
+        text: "Turn each article into a week of social (Claude drafts, you edit), monitor citation share weekly, and ask the per-domain assistant for your three best moves each week. Milestone: a publish-and-amplify loop running on its own rhythm.",
+      },
+      {
+        type: "h2",
+        text: "Weeks 11–12: review and double down",
+        id: "weeks-11-12",
+      },
+      {
+        type: "p",
+        text: "Read the trend, not the noise: which topics drove citations and traffic? Double down on winners, retire what didn't move, set next quarter's gap list. Milestone: a data-backed plan for the next 90 days — and the start of compounding.",
+      },
+      {
+        type: "quote",
+        text: "whatthewordsays.org didn't get a viral spike. It ran this loop — audit, close gaps, amplify, review — and by early June 2026 had already drawn 38,334 unique visitors, double its entire 2025 total. That's what compounding looks like.",
+      },
+    ],
+    faq: [
+      {
+        q: "Will I see results in 90 days?",
+        a: "The first technical and content gains usually show within 4–8 weeks, with compounding after. whatthewordsays.org roughly tripled over a quarter, then stepped up sharply.",
+      },
+      {
+        q: "Can I run the playbook myself?",
+        a: "Yes — the free tools and audit support a DIY run. Many businesses run the first cycle themselves, then move to managed growth once the model is proven.",
+      },
+    ],
+  },
 ];
 
 // ── Scheduled publishing ──────────────────────────────────────────────
