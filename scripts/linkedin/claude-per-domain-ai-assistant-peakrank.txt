@@ -1,0 +1,14 @@
+Open almost any SEO dashboard and you get a wall of charts. The data's all there. The answer isn't.
+
+The hardest part of this work was never collecting numbers — it was telling a busy owner what they mean and what to do next.
+
+So I built a per-domain AI assistant into PeakRank, powered by Claude. You just ask it:
+→ "Why did my AI visibility drop this month?" → the exact engines and queries where citations were lost
+→ "What should I fix first?" → prioritised from YOUR audit, not a generic checklist
+→ "How do I compare to my competitor?" → from the citation data you're both measured on
+
+The key word is grounded. It answers from your own rankings, citations and audit data (retrieval-augmented generation under the hood). When it can't back a claim from your numbers, it says so.
+
+An AI that confidently invents why your traffic fell is worse than useless. Grounding is what makes it a tool you can run on.
+
+#GEO #SEO #AI #Claude #RAG

@@ -1,0 +1,19 @@
+PeakRank sells visibility. But the biggest lever for most South African business owners isn't a better agency — it's learning to use AI themselves.
+
+So I built the PeakRank AI Academy: a 3-tier curriculum teaching SA businesses to run on Anthropic's Claude.
+
+I didn't want to invent folk wisdom about prompting, so it's grounded in Anthropic's own foundations:
+→ the "4 Ds" framework — Delegation, Description, Discernment, Diligence
+→ Claude for Small Business — connecting Claude to the tools you already use
+→ an accuracy discipline: every module links the official source
+
+The tiers:
+→ Foundations — what Claude is, the 4 Ds, your first real prompts, POPIA-safe data habits
+→ Growth Engine — repeatable marketing/content/admin workflows + a personal assistant
+→ Accelerator — advanced prompting, custom agentic workflows, team rollout, a capstone
+
+And POPIA runs through all of it from module one. Teaching AI without teaching data law would be reckless.
+
+The agency makes you visible. The Academy makes you capable.
+
+#AI #Claude #SouthAfrica #SmallBusiness #POPIA

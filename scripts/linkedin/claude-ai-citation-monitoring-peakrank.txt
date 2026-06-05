@@ -1,0 +1,15 @@
+"We rank #1 on Google but our leads are down."
+
+I hear this constantly. Here's what's happening: your customers stopped scrolling links and started asking ChatGPT, Perplexity and Google's AI Overviews — and those answers don't mention you.
+
+There's no rank-tracker for that. So I built one into PeakRank, powered by Claude:
+→ start from the real questions your customers ask
+→ put them to each AI engine on a schedule
+→ Claude reads every answer like an analyst — who got cited, who's first, what's said
+→ roll it into a visibility score you track weekly
+
+One finding that should worry you: across 50 queries on ChatGPT, Perplexity and Google AI Overviews, the cited sources overlapped only ~12%. Being the default in one engine tells you almost nothing about the others.
+
+The brands AI cites today become the defaults it trusts tomorrow. Measure your share now — while your competitors aren't looking.
+
+#GEO #AISearch #SEO #Claude #Perplexity

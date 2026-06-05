@@ -1,0 +1,16 @@
+Most content is written to rank.
+The content I generate at PeakRank is written to be quoted.
+
+In 2026 that difference is the whole game — and Claude is how I do both at once.
+
+To be quotable by an AI, a page has to:
+→ lead with a direct, self-contained answer
+→ use question-shaped headings
+→ name entities consistently so the model builds a confident association
+→ ship with FAQ + schema markup machines can actually parse
+
+Claude drafts all of that in minutes. Then I do the part you can't delegate: verify every claim, add the real numbers a model can't invent, and cut anything generic. Because unedited AI filler is the fastest way to lose trust with readers AND engines.
+
+The mental model: don't write to fill a page. Write the one paragraph you'd want an AI to read aloud when someone asks about your business — then make everything else support it.
+
+#GEO #SEO #ContentStrategy #Claude #StructuredData
