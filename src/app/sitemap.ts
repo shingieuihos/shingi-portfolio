@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
-import { posts } from "@/lib/blog";
+import { publishedPosts } from "@/lib/blog";
 
 export const dynamic = "force-static";
 
 const BASE = "https://shingi.tech";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const blogPosts = posts.map((p) => ({
+  const blogPosts = publishedPosts().map((p) => ({
     url: `${BASE}/blog/${p.slug}`,
     lastModified: p.updated ?? p.date,
     changeFrequency: "monthly" as const,

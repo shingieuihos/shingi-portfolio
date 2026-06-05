@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getPost, posts, sortedPosts, type ContentBlock } from "@/lib/blog";
+import { getPost, publishedPosts, sortedPosts, type ContentBlock } from "@/lib/blog";
 import { profile } from "@/lib/content";
 import { BlogFooter, BlogNav } from "../page";
 
 export function generateStaticParams() {
-  return posts.map((p) => ({ slug: p.slug }));
+  return publishedPosts().map((p) => ({ slug: p.slug }));
 }
 
 export const dynamicParams = false;

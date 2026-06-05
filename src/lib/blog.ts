@@ -446,13 +446,523 @@ export const posts: BlogPost[] = [
       },
     ],
   },
+  {
+    slug: "how-claude-powers-peakrank-digital-geo-seo",
+    title: "How Anthropic's Claude powers PeakRank Digital's GEO and SEO engine",
+    description:
+      "A tour under the hood of how I use Anthropic's Claude to run PeakRank Digital — from GEO content and AI citation monitoring to the per-domain assistant that reads your search data.",
+    date: "2026-06-05",
+    dateLabel: "5 June 2026",
+    readingMinutes: 7,
+    category: "GEO",
+    tags: ["PeakRank Digital", "Anthropic", "Claude", "GEO", "SEO", "AI search", "South Africa"],
+    tldr: "PeakRank Digital runs on Anthropic's Claude. I use it as the reasoning engine behind everything we sell — generating GEO-ready content, monitoring which AI engines cite our clients, and powering a per-domain assistant that turns raw search data into plain-language next steps.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "PeakRank Digital looks like a digital marketing agency from the outside. Under the hood, it's an AI product — and the intelligence layer is Anthropic's Claude. This post is the honest tour of where Claude sits in the stack, what jobs I hand it, and why it's the difference between selling 'SEO services' and actually moving a client's visibility across both Google and AI search.",
+      },
+      {
+        type: "h2",
+        text: "Why I built PeakRank on Claude",
+        id: "why-claude",
+      },
+      {
+        type: "p",
+        text: "I founded PeakRank Digital because search split into two channels: the ranked list of links you optimise with SEO, and the synthesised answer an AI engine writes, which you earn through Generative Engine Optimization (GEO). Covering both at scale, for many clients, is a reasoning problem before it's a marketing problem. You have to read messy web content, judge whether a brand is represented well, write content a model will happily quote, and explain all of it to a business owner in plain language.",
+      },
+      {
+        type: "p",
+        text: "That is exactly the shape of work large language models are good at. I evaluated the options and built on Claude because it is strong at long-context reading, structured extraction, and following careful instructions without going off-script — which matters when the output goes straight to a paying client.",
+      },
+      {
+        type: "h2",
+        text: "The four jobs Claude does at PeakRank",
+        id: "four-jobs",
+      },
+      {
+        type: "p",
+        text: "Claude isn't a chatbot bolted onto the dashboard. It's wired into four distinct workflows, each of which gets its own field note in this series:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Citation monitoring — reading the answers ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews give to your customers' questions, and extracting who got cited.",
+          "Content generation — turning a keyword and a citation gap into a GEO-ready brief, structured to be quoted by an AI and to rank on Google at the same time.",
+          "The per-domain assistant — a grounded assistant that answers 'why did my visibility change?' from your own data, not generic advice.",
+          "Education — the PeakRank AI Academy, which teaches South African businesses to use Claude safely in their own operations.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Picking the right Claude for the job",
+        id: "model-choice",
+      },
+      {
+        type: "p",
+        text: "Not every task needs the same horsepower, and pretending it does is how you burn money. I route work across Claude's model family deliberately: the deepest reasoning models for analysis a client will act on — competitive citation gaps, strategy, audits — and the faster, cheaper models for high-volume, well-defined jobs like classifying thousands of AI answers or drafting routine copy. Matching the model to the task is what keeps a bootstrapped product's margins alive.",
+      },
+      {
+        type: "h2",
+        text: "Guardrails: POPIA and the 4 Ds",
+        id: "guardrails",
+      },
+      {
+        type: "p",
+        text: "Pointing an AI at client data in South Africa means taking the Protection of Personal Information Act (POPIA) seriously, not as a footnote. PeakRank is POPIA-aware by design — what data Claude sees, why, and with what consent is part of the architecture.",
+      },
+      {
+        type: "p",
+        text: "On the human side, I run the whole operation on Anthropic's '4 Ds' framework for working with AI: Delegation, Description, Discernment and Diligence. Claude drafts and analyses; a human decides what's true and what ships. That discipline is the reason clients get AI speed without AI mistakes.",
+      },
+      {
+        type: "quote",
+        text: "Claude is the reasoning engine; I'm the editor-in-chief. The model does the reading and the first draft at superhuman speed — a human still owns every claim that reaches a client.",
+      },
+      {
+        type: "h2",
+        text: "Where this series goes next",
+        id: "next",
+      },
+      {
+        type: "p",
+        text: "The rest of these field notes open each box: how the citation monitor works, how Claude writes content engineered to be quoted, the per-domain assistant, and the Academy. If you want the strategy that sits above all of it, read my post on building for SEO and GEO in 2026. If you want PeakRank to do it for your brand, the fastest start is a free GEO audit at peakrank.co.za.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is PeakRank Digital?",
+        a: "PeakRank Digital is a South African GEO, SEO and SEM agency and platform founded by Shingi Mudyirwa. It makes brands visible across both Google and AI search engines, and uses Anthropic's Claude as the reasoning engine behind its content, monitoring and analytics.",
+      },
+      {
+        q: "How does PeakRank Digital use Anthropic's Claude?",
+        a: "PeakRank uses Claude for four jobs: monitoring which AI engines cite a brand, generating GEO-ready content, powering a per-domain assistant that answers questions from a client's own search data, and teaching businesses to use Claude through the PeakRank AI Academy.",
+      },
+      {
+        q: "Why use Claude instead of another AI model?",
+        a: "PeakRank uses Claude for its strength in long-context reading, structured extraction and reliable instruction-following — qualities that matter when output goes directly to paying clients. Different Claude models are matched to different tasks to balance quality and cost.",
+      },
+      {
+        q: "Is client data safe under POPIA?",
+        a: "Yes. PeakRank is built to be POPIA-aware: what data Claude processes, why, and with what consent is part of the system design, and a human reviews AI output before it reaches clients.",
+      },
+    ],
+  },
+  {
+    slug: "claude-ai-citation-monitoring-peakrank",
+    title: "AI citation monitoring: how PeakRank uses Claude to see who the machines recommend",
+    description:
+      "Google rankings no longer tell the whole story. Here's how I built PeakRank's AI citation monitoring on Claude to track whether ChatGPT, Perplexity and AI Overviews cite you — or your competitor.",
+    date: "2026-06-07",
+    dateLabel: "7 June 2026",
+    readingMinutes: 6,
+    category: "GEO",
+    tags: ["PeakRank Digital", "Claude", "AI citation monitoring", "GEO", "AI search", "Perplexity", "ChatGPT"],
+    tldr: "PeakRank's citation monitor asks AI engines the questions your customers ask, then uses Claude to read the answers — extracting which brands were cited, in what context, and how you compare. It turns 'are we in the AI answer?' into a number you can track every week.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "For twenty years the SEO scoreboard was your Google ranking. In 2026 that scoreboard is incomplete. A large share of searches now end inside an AI-generated answer the user never clicks past — and if your brand isn't named in that answer, your ranking didn't save you. PeakRank's AI citation monitoring exists to measure the new scoreboard, and Claude is what reads it.",
+      },
+      {
+        type: "h2",
+        text: "The problem: you can't see the AI answer",
+        id: "the-problem",
+      },
+      {
+        type: "p",
+        text: "When a buyer asks ChatGPT 'who are the best [your category] in Johannesburg?', the model writes a paragraph and names a few businesses. You have no rank-tracker for that. Worse, the answer differs by engine. When I tested 50 real queries across ChatGPT, Perplexity and Google AI Overviews, the overlap in cited sources was only about 12% — being the default in one engine tells you almost nothing about the others.",
+      },
+      {
+        type: "p",
+        text: "So the first job is simply visibility into invisibility: what are the engines actually saying about you, and your competitors, right now?",
+      },
+      {
+        type: "h2",
+        text: "How the monitor works",
+        id: "how-it-works",
+      },
+      {
+        type: "p",
+        text: "The pipeline is straightforward in shape and hard in the details:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Start from the questions your customers actually ask — by category, location and intent — not vanity keywords.",
+          "Put those questions to each AI engine on a schedule, capturing the full synthesised answer.",
+          "Hand each answer to Claude to read like an analyst: which brands are named, who's recommended first, what's said about each, and whether you appear at all.",
+          "Roll it up into a visibility score per engine, tracked over time, so a drop or a competitor's rise becomes a number you can see.",
+        ],
+      },
+      {
+        type: "p",
+        text: "The reading step is where Claude earns its place. Extracting 'who was cited and how' from free-flowing prose, consistently, across thousands of answers, is exactly the structured-extraction task large language models handle well — and Claude does it reliably enough to put in front of a client.",
+      },
+      {
+        type: "h2",
+        text: "From data to decision",
+        id: "data-to-decision",
+      },
+      {
+        type: "p",
+        text: "A number isn't a strategy. Claude also drafts the 'so what': if a competitor is cited for a question you're absent from, that's a content gap with a name and a priority. Those gaps feed straight into the content workflow described in the next post, closing the loop from 'we're invisible here' to 'here's the brief that fixes it'.",
+      },
+      {
+        type: "quote",
+        text: "Traditional rank tracking answers 'where am I on Google?'. Citation monitoring answers 'do the machines recommend me?' — and increasingly, that's the question that decides who gets the lead.",
+      },
+      {
+        type: "h2",
+        text: "Why this matters now",
+        id: "why-now",
+      },
+      {
+        type: "p",
+        text: "AI answers are a land grab. The brands models cite today become the defaults they reach for tomorrow, because models lean on the sources they already trust. Measuring your citation share now — while most South African businesses aren't even looking — is how you claim that default position before it hardens around someone else.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is AI citation monitoring?",
+        a: "AI citation monitoring tracks whether AI engines like ChatGPT, Perplexity, Gemini, Claude and Google AI Overviews mention or recommend a brand when users ask relevant questions. PeakRank measures this as a visibility score per engine, tracked over time.",
+      },
+      {
+        q: "How does PeakRank monitor AI citations?",
+        a: "PeakRank puts real customer questions to each AI engine on a schedule, then uses Anthropic's Claude to read each answer and extract which brands were cited, in what order and in what context — rolling the results into a trackable visibility score.",
+      },
+      {
+        q: "Why isn't Google ranking enough anymore?",
+        a: "Because a growing share of searches are answered directly by AI, where the user reads a synthesised paragraph instead of clicking a ranked link. If your brand isn't named in that answer, a high Google ranking won't capture the lead.",
+      },
+      {
+        q: "Do different AI engines cite different sources?",
+        a: "Yes. In PeakRank's testing of 50 queries across ChatGPT, Perplexity and Google AI Overviews, only about 12% of cited sources overlapped — so a brand must be monitored across all engines, not just one.",
+      },
+    ],
+  },
+  {
+    slug: "claude-geo-content-generation-peakrank",
+    title: "From keyword to citation: how Claude writes GEO-ready content at PeakRank",
+    description:
+      "How I use Anthropic's Claude to produce content engineered to be quoted by AI — entity-rich, structured for extraction, and shipped with the FAQ and schema markup that both Google and LLMs reward.",
+    date: "2026-06-09",
+    dateLabel: "9 June 2026",
+    readingMinutes: 7,
+    category: "SEO",
+    tags: ["PeakRank Digital", "Claude", "content", "GEO", "SEO", "schema markup", "structured data"],
+    tldr: "PeakRank uses Claude to turn a keyword and a citation gap into a finished, GEO-ready brief: a lead-with-the-answer structure, question-shaped headings, entity reinforcement and FAQ schema. The goal isn't to rank a page — it's to make a paragraph quotable.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Most content is written to rank. The content I generate at PeakRank is written to be quoted. Those are related but different goals, and the difference is the whole game in 2026. Claude is the tool that lets me produce content engineered for both — pages that rank on Google and paragraphs that AI engines lift into their answers — at the speed a real client roster demands.",
+      },
+      {
+        type: "h2",
+        text: "Ranking is not the same as being quoted",
+        id: "rank-vs-quote",
+      },
+      {
+        type: "p",
+        text: "An SEO page wins a position in a list and earns a click. A GEO-optimised page wins something subtler: it becomes the source a model trusts enough to summarise. To be quotable, content has to lead with a direct, self-contained answer, state verifiable specifics, and be structured so a machine can lift a clean chunk without dragging in context. Claude is good at writing exactly that, because it is good at recognising what it would itself want to quote.",
+      },
+      {
+        type: "h2",
+        text: "How Claude turns a gap into a brief",
+        id: "gap-to-brief",
+      },
+      {
+        type: "p",
+        text: "The input usually comes from the citation monitor: a question your customers ask, where a competitor is cited and you aren't. From there Claude produces a working brief:",
+      },
+      {
+        type: "ul",
+        items: [
+          "A lead-with-the-answer opening — the TL;DR a model can quote verbatim, like the one at the top of this post.",
+          "Question-shaped headings that mirror how people actually ask, so the structure matches the prompts engines receive.",
+          "Entity reinforcement — naming the brand, people, place and products consistently so the model builds a confident association.",
+          "An FAQ block written to be marked up as FAQPage structured data, which helps both Google rich results and the retrieval step that feeds an LLM.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Claude drafts all of that in minutes. I then do the part that can't be delegated: check every claim, add the real numbers and first-hand specifics a model can't invent, and cut anything that smells generic. AI-generated filler is the fastest way to lose trust with both readers and engines.",
+      },
+      {
+        type: "h2",
+        text: "Shipping the structure, not just the words",
+        id: "structure",
+      },
+      {
+        type: "p",
+        text: "Words are half the job. The other half is the markup. PeakRank ships content with the Schema.org structured data — Organization, Person, FAQPage, Article — that makes entities explicit and machine-readable. Claude helps generate and validate that JSON-LD, so the page doesn't just read well, it parses well. This is the same foundation that serves both SEO and GEO, which is why building for one and ignoring the other is a wasted opportunity.",
+      },
+      {
+        type: "quote",
+        text: "Don't write to fill a page. Write the one paragraph you'd want an AI to read aloud when someone asks about your business — then make everything else support it.",
+      },
+      {
+        type: "h2",
+        text: "Speed with a human in the loop",
+        id: "human-loop",
+      },
+      {
+        type: "p",
+        text: "The reason this works as a business is throughput with quality held constant. Claude removes the blank-page cost and the structural busywork; the human adds judgement, truth and taste. That division — Anthropic's '4 Ds' in practice — is how PeakRank produces GEO-ready content for many clients without it reading like a machine wrote it, because in the way that matters, a person did.",
+      },
+    ],
+    faq: [
+      {
+        q: "What makes content GEO-ready?",
+        a: "GEO-ready content leads with a direct, self-contained answer, uses question-shaped headings, reinforces clear entities, states verifiable specifics, and ships with FAQ and schema markup — so AI engines can confidently quote a clean chunk of it.",
+      },
+      {
+        q: "How does PeakRank use Claude to write content?",
+        a: "PeakRank uses Claude to turn a keyword and a citation gap into a structured, GEO-ready brief, then a human verifies every claim, adds real data and specifics, and approves it before publishing. Claude also helps generate and validate Schema.org markup.",
+      },
+      {
+        q: "Does AI-written content hurt SEO?",
+        a: "Generic, unedited AI filler can hurt trust with both readers and search engines. PeakRank avoids that by using Claude for structure and first drafts while a human adds verifiable specifics and judgement before anything ships.",
+      },
+      {
+        q: "Is the same content good for both SEO and GEO?",
+        a: "Largely yes. SEO and GEO share a foundation — fast, crawlable, well-structured pages with clear entities and useful content. GEO adds a few moves on top, like leading with the answer and structuring for extraction.",
+      },
+    ],
+  },
+  {
+    slug: "claude-per-domain-ai-assistant-peakrank",
+    title: "Ask your own search data: the per-domain AI assistant Claude powers at PeakRank",
+    description:
+      "Most SEO dashboards bury the answer in charts. I built a per-domain assistant on Claude so clients can just ask 'why did my AI visibility drop?' and get a grounded, data-backed answer.",
+    date: "2026-06-11",
+    dateLabel: "11 June 2026",
+    readingMinutes: 6,
+    category: "Engineering",
+    tags: ["PeakRank Digital", "Claude", "RAG", "AI assistant", "GEO", "SEO", "analytics"],
+    tldr: "Every domain on PeakRank gets an AI assistant powered by Claude that's grounded in that domain's own rankings, citations and audit data. Clients ask questions in plain language; Claude answers from their numbers — no chart-reading required.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "Open almost any SEO dashboard and you're met with a wall of charts. The data is all there; the answer isn't. The hardest part of this industry was never collecting numbers — it was telling a busy business owner what the numbers mean and what to do next. So I built a per-domain assistant into PeakRank, powered by Claude, that you can simply ask.",
+      },
+      {
+        type: "h2",
+        text: "The problem with dashboards",
+        id: "dashboard-problem",
+      },
+      {
+        type: "p",
+        text: "A line went down. Is that seasonality, a Google update, a technical regression, or a competitor pulling ahead in AI answers? A chart can't tell you, and most owners don't have an analyst on hand to interpret it. The result is dashboards people log into, frown at, and close.",
+      },
+      {
+        type: "h2",
+        text: "An assistant grounded in your data",
+        id: "grounded",
+      },
+      {
+        type: "p",
+        text: "The key word is grounded. This isn't a generic chatbot that gives textbook SEO advice. Each domain's assistant is wired to that domain's own data — its keyword rankings, its AI citation scores, its site-audit results — and Claude answers from those numbers.",
+      },
+      {
+        type: "ul",
+        items: [
+          "Ask 'why did my AI visibility drop this month?' and it points to the specific engines and queries where citations were lost.",
+          "Ask 'what should I fix first?' and it prioritises from your actual audit, not a generic checklist.",
+          "Ask 'how do I compare to my main competitor?' and it answers from the citation data you're both being measured on.",
+          "Ask it in plain English at 11pm, and get a grounded answer without booking a call.",
+        ],
+      },
+      {
+        type: "p",
+        text: "Technically, this is retrieval-augmented generation: the relevant slices of a client's data are pulled in and given to Claude as context, so its answers are anchored to facts rather than guesses. Claude's strength with long context and faithfulness to source material is what makes the answers trustworthy enough to act on.",
+      },
+      {
+        type: "h2",
+        text: "Why grounding matters",
+        id: "why-grounding",
+      },
+      {
+        type: "p",
+        text: "An ungrounded model will happily invent a plausible reason your traffic fell. That's worse than useless — it's confidently wrong. Tying every answer back to the client's real numbers is what turns the assistant from a party trick into a tool a business runs on. When it can't support a claim from the data, it should say so, and it does.",
+      },
+      {
+        type: "quote",
+        text: "The win isn't a chatbot in a dashboard. It's that a business owner can ask 'what changed and what do I do?' and get an answer grounded in their own numbers, in seconds.",
+      },
+      {
+        type: "h2",
+        text: "From insight to action",
+        id: "insight-to-action",
+      },
+      {
+        type: "p",
+        text: "Because the assistant shares the same data backbone as the citation monitor and the content engine, an insight doesn't dead-end. 'You lost citations for these three questions' becomes 'here are the briefs to win them back'. That continuity — see it, understand it, fix it — is the point of building the whole platform on one reasoning engine instead of stitching together five disconnected tools.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is the PeakRank per-domain assistant?",
+        a: "It's an AI assistant, powered by Anthropic's Claude, attached to each domain in PeakRank. It answers plain-language questions about that domain's SEO and GEO performance using the domain's own rankings, citation scores and audit data.",
+      },
+      {
+        q: "How is it different from a normal chatbot?",
+        a: "It's grounded. Instead of generic SEO advice, it answers from the specific client's real data using retrieval-augmented generation, so its answers are anchored to facts and tied to actions the client can take.",
+      },
+      {
+        q: "What can I ask it?",
+        a: "Questions like 'why did my AI visibility drop?', 'what should I fix first?', or 'how do I compare to my competitor?' — and get answers drawn from your actual rankings, citations and site audit.",
+      },
+      {
+        q: "Can the assistant make things up?",
+        a: "It's designed to answer from the client's own data and to say when it can't support a claim from that data, which is what makes its answers reliable enough to act on.",
+      },
+    ],
+  },
+  {
+    slug: "peakrank-ai-academy-claude-south-africa",
+    title: "Teaching South African businesses to run on Claude: the PeakRank AI Academy",
+    description:
+      "PeakRank's Academy teaches SA SMEs to use Anthropic's Claude in their business — built on Anthropic's 4 Ds AI-fluency framework and Claude for Small Business, with POPIA baked in from module one.",
+    date: "2026-06-13",
+    dateLabel: "13 June 2026",
+    readingMinutes: 7,
+    category: "Strategy",
+    tags: ["PeakRank Digital", "Claude", "Anthropic", "AI Academy", "POPIA", "South Africa", "SME"],
+    tldr: "The PeakRank AI Academy is a three-tier curriculum that teaches South African businesses to use Anthropic's Claude safely and productively — grounded in Anthropic's '4 Ds' AI-fluency framework and Claude for Small Business, and POPIA-aware from module one.",
+    projectSlug: "peakrank",
+    projectName: "PeakRank Digital",
+    projectUrl: "https://www.peakrank.co.za",
+    body: [
+      {
+        type: "p",
+        text: "PeakRank Digital sells visibility. But the more time I spent with South African business owners, the clearer one thing became: the biggest lever for most of them isn't a better agency — it's learning to use AI in their own business. So I built the PeakRank AI Academy to teach exactly that, with Anthropic's Claude at the centre and the work grounded in Anthropic's own frameworks.",
+      },
+      {
+        type: "h2",
+        text: "Why teach, not just sell",
+        id: "why-teach",
+      },
+      {
+        type: "p",
+        text: "There are over two and a half million small and medium businesses in South Africa, and most are time-poor and lean. Done-for-you services help, but a founder who can delegate research, drafting and analysis to Claude gets a compounding advantage every single day. Teaching that is higher-leverage than doing one more audit — and it builds the kind of trust no ad ever will.",
+      },
+      {
+        type: "h2",
+        text: "Grounded in Anthropic's own foundations",
+        id: "anthropic-foundations",
+      },
+      {
+        type: "p",
+        text: "I didn't want to invent folk wisdom about prompting. The Academy is built on two Anthropic foundations so the guidance stays accurate and current:",
+      },
+      {
+        type: "ul",
+        items: [
+          "The '4 Ds' AI-fluency framework — Delegation, Description, Discernment and Diligence — as the mental model for working with Claude well rather than blindly.",
+          "Claude for Small Business — the practical side, including how Claude connects to the tools businesses already run on, like Google Workspace, Microsoft 365 and accounting and CRM software.",
+          "An accuracy discipline: AI products change fast, so modules link the official source and tell you to confirm current pricing and features before you rely on a number.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "The three tiers",
+        id: "tiers",
+      },
+      {
+        type: "p",
+        text: "The curriculum is built to take someone from 'I've heard of ChatGPT' to running real workflows on Claude:",
+      },
+      {
+        type: "ul",
+        items: [
+          "Foundations — what Claude is, the 4 Ds, your first useful prompts, and how to stay safe and POPIA-aware with business data.",
+          "Growth Engine — repeatable workflows for marketing, content and admin, plus a personal AI assistant for the owner.",
+          "Accelerator — advanced prompting, custom agentic workflows, rolling AI out to a team, and a capstone project applied to the real business.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "POPIA from module one",
+        id: "popia",
+      },
+      {
+        type: "p",
+        text: "Teaching South African businesses to use AI without teaching them the Protection of Personal Information Act would be reckless. Data safety and POPIA awareness are woven through the Academy from the start — what you can and can't put into a tool, how consent works, and how to get the upside of AI without inheriting legal risk. The same principle runs through the whole of PeakRank: compliance is a feature, not a footnote.",
+      },
+      {
+        type: "quote",
+        text: "The agency makes you visible. The Academy makes you capable. In a market this early, the businesses that learn to run on AI now will be the ones competitors can't catch.",
+      },
+      {
+        type: "h2",
+        text: "Where it fits",
+        id: "where-it-fits",
+      },
+      {
+        type: "p",
+        text: "The Academy completes the picture. The platform monitors your AI visibility and the agency improves it; the Academy makes your own team fluent in the same tools I use to deliver all of it. It's the same bet repeated at a different level: the South African businesses that adopt AI early — safely, and with a real framework — get a head start that's very hard to give back. If that's the bet you want to make, start at peakrank.co.za.",
+      },
+    ],
+    faq: [
+      {
+        q: "What is the PeakRank AI Academy?",
+        a: "The PeakRank AI Academy is a three-tier curriculum that teaches South African businesses to use Anthropic's Claude in their operations. It runs from foundations through to advanced agentic workflows, and is POPIA-aware throughout.",
+      },
+      {
+        q: "What frameworks is the Academy based on?",
+        a: "It's grounded in two Anthropic foundations: the '4 Ds' AI-fluency framework (Delegation, Description, Discernment, Diligence) and Claude for Small Business, with modules linking official sources for accuracy.",
+      },
+      {
+        q: "Who is the Academy for?",
+        a: "It's built for South African small and medium businesses — from owners new to AI through to teams ready to roll out custom Claude workflows across their operations.",
+      },
+      {
+        q: "Does the Academy cover POPIA and data safety?",
+        a: "Yes. POPIA awareness and data safety are woven through the curriculum from the first module, covering what data is safe to use, how consent works, and how to adopt AI without inheriting legal risk.",
+      },
+    ],
+  },
 ];
 
-export function getPost(slug: string): BlogPost | undefined {
-  return posts.find((p) => p.slug === slug);
+// ── Scheduled publishing ──────────────────────────────────────────────
+// The site is a static export with no runtime scheduler: a post only goes
+// live when the site is rebuilt on/after its `date`. Posts dated in the
+// future are withheld at build time (not rendered, not in sitemap, no static
+// route), so pushing all of them at once is safe — each appears on the next
+// build that runs on or after its publish date.
+
+/** Build-time date in YYYY-MM-DD (UTC), comparable to a post's ISO `date`. */
+const TODAY = new Date().toISOString().slice(0, 10);
+
+/** True once a post's publish date has arrived (evaluated at build time). */
+export function isPublished(post: BlogPost): boolean {
+  return post.date <= TODAY;
 }
 
-/** Newest first. */
+/** Posts whose publish date has arrived. */
+export function publishedPosts(): BlogPost[] {
+  return posts.filter(isPublished);
+}
+
+export function getPost(slug: string): BlogPost | undefined {
+  const post = posts.find((p) => p.slug === slug);
+  return post && isPublished(post) ? post : undefined;
+}
+
+/** Live posts, newest first. */
 export function sortedPosts(): BlogPost[] {
-  return [...posts].sort((a, b) => (a.date < b.date ? 1 : -1));
+  return publishedPosts().sort((a, b) => (a.date < b.date ? 1 : -1));
 }
