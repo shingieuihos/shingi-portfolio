@@ -14,7 +14,7 @@ Then read the pattern, not just yes/no:
 
 Claude reads the ChatGPT, Perplexity, Gemini and AI-Overview answers and extracts who got cited, at a scale no manual check can match. A human turns each gap into a page engineered to be quoted.
 
-The brands models cite today become the defaults they reach for tomorrow. Measure your share now — while competitors aren't even looking 👇
+The brands models cite today become the defaults they reach for tomorrow. Measure your share now — while competitors aren't even looking
 
 #GEO #SEO #AISearch #Claude #SouthAfrica
 @ClaudeforBusiness @PeakRank.co.za

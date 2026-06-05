@@ -9,7 +9,7 @@
 // returns 200 (so Cloudflare has finished the rebuild and the OG card renders),
 // then publishes.
 
-import { readFileSync } from "node:fs";
+import { readFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
@@ -29,6 +29,34 @@ if (!TOKEN) {
 const here = dirname(fileURLToPath(import.meta.url));
 const text = readFileSync(join(here, "linkedin", `${slug}.txt`), "utf8").trim();
 const url = `https://shingi.tech/blog/${slug}`;
+
+// Build real @-mention annotations from linkedin/mentions.json (anchor text ->
+// organization URN), so tagged pages are linked and notified rather than left
+// as plain text. Indices are plain string offsets; captions are kept free of
+// emoji / non-BMP characters before any anchor so these line up exactly.
+const shareCommentary = { text };
+const mentionsPath = join(here, "linkedin", "mentions.json");
+if (existsSync(mentionsPath)) {
+  const map = JSON.parse(readFileSync(mentionsPath, "utf8"));
+  const attributes = [];
+  for (const [anchor, urn] of Object.entries(map)) {
+    let from = 0;
+    let idx;
+    while ((idx = text.indexOf(anchor, from)) !== -1) {
+      attributes.push({
+        start: idx,
+        length: anchor.length,
+        value: { "com.linkedin.common.CompanyAttributedEntity": { company: urn } },
+      });
+      from = idx + anchor.length;
+    }
+  }
+  if (attributes.length) {
+    attributes.sort((a, b) => a.start - b.start);
+    shareCommentary.attributes = attributes;
+    console.log(`attaching ${attributes.length} mention(s): ${attributes.map((a) => text.slice(a.start, a.start + a.length)).join(", ")}`);
+  }
+}
 
 // 1) Wait for the rebuilt page to be live (up to ~12 min).
 const deadline = Date.now() + 12 * 60 * 1000;
@@ -57,7 +85,7 @@ const body = {
   lifecycleState: "PUBLISHED",
   specificContent: {
     "com.linkedin.ugc.ShareContent": {
-      shareCommentary: { text },
+      shareCommentary,
       shareMediaCategory: "ARTICLE",
       media: [{ status: "READY", originalUrl: url }],
     },

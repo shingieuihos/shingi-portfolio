@@ -11,7 +11,7 @@ The content engine didn't change overnight. What changed is that the same good c
 
 The how, in one breath: fix the technical foundation, restructure content to be quoted (not just ranked), monitor which AI engines cite you, and turn the site's own data into a weekly to-do list. Claude does the reading and first drafts at speed; a human owns every decision.
 
-Full case study, with the month-by-month table 👇
+Full case study, with the month-by-month table
 
 #GEO #SEO #AISearch #Claude #SouthAfrica
 @ClaudeforBusiness @PeakRank.co.za
