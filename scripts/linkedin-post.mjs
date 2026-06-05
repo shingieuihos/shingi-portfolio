@@ -27,7 +27,11 @@ if (!TOKEN) {
 }
 
 const here = dirname(fileURLToPath(import.meta.url));
-const text = readFileSync(join(here, "linkedin", `${slug}.txt`), "utf8").trim();
+// Normalise to LF so mention offsets are stable no matter how git checks the
+// caption out (CRLF on Windows, LF in the cloud routine).
+const text = readFileSync(join(here, "linkedin", `${slug}.txt`), "utf8")
+  .replace(/\r\n/g, "\n")
+  .trim();
 const url = `https://shingi.tech/blog/${slug}`;
 
 // Build real @-mention annotations from linkedin/mentions.json (anchor text ->
