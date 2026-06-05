@@ -556,8 +556,8 @@ export const posts: BlogPost[] = [
     title: "AI citation monitoring: how PeakRank uses Claude to see who the machines recommend",
     description:
       "Google rankings no longer tell the whole story. Here's how I built PeakRank's AI citation monitoring on Claude to track whether ChatGPT, Perplexity and AI Overviews cite you — or your competitor.",
-    date: "2026-06-07",
-    dateLabel: "7 June 2026",
+    date: "2026-06-06",
+    dateLabel: "6 June 2026",
     readingMinutes: 6,
     category: "GEO",
     tags: ["PeakRank Digital", "Claude", "AI citation monitoring", "GEO", "AI search", "Perplexity", "ChatGPT"],
@@ -652,8 +652,8 @@ export const posts: BlogPost[] = [
     title: "From keyword to citation: how Claude writes GEO-ready content at PeakRank",
     description:
       "How I use Anthropic's Claude to produce content engineered to be quoted by AI — entity-rich, structured for extraction, and shipped with the FAQ and schema markup that both Google and LLMs reward.",
-    date: "2026-06-09",
-    dateLabel: "9 June 2026",
+    date: "2026-06-07",
+    dateLabel: "7 June 2026",
     readingMinutes: 7,
     category: "SEO",
     tags: ["PeakRank Digital", "Claude", "content", "GEO", "SEO", "schema markup", "structured data"],
@@ -744,8 +744,8 @@ export const posts: BlogPost[] = [
     title: "Ask your own search data: the per-domain AI assistant Claude powers at PeakRank",
     description:
       "Most SEO dashboards bury the answer in charts. I built a per-domain assistant on Claude so clients can just ask 'why did my AI visibility drop?' and get a grounded, data-backed answer.",
-    date: "2026-06-11",
-    dateLabel: "11 June 2026",
+    date: "2026-06-08",
+    dateLabel: "8 June 2026",
     readingMinutes: 6,
     category: "Engineering",
     tags: ["PeakRank Digital", "Claude", "RAG", "AI assistant", "GEO", "SEO", "analytics"],
@@ -836,8 +836,8 @@ export const posts: BlogPost[] = [
     title: "Teaching South African businesses to run on Claude: the PeakRank AI Academy",
     description:
       "PeakRank's Academy teaches SA SMEs to use Anthropic's Claude in their business — built on Anthropic's 4 Ds AI-fluency framework and Claude for Small Business, with POPIA baked in from module one.",
-    date: "2026-06-13",
-    dateLabel: "13 June 2026",
+    date: "2026-06-09",
+    dateLabel: "9 June 2026",
     readingMinutes: 7,
     category: "Strategy",
     tags: ["PeakRank Digital", "Claude", "Anthropic", "AI Academy", "POPIA", "South Africa", "SME"],
