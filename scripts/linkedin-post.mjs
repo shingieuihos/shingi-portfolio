@@ -9,9 +9,10 @@
 // returns 200 (so Cloudflare has finished the rebuild and the OG card renders),
 // then publishes.
 
-import { readFileSync, existsSync } from "node:fs";
+import { readFileSync, existsSync, appendFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
+import { spawnSync } from "node:child_process";
 
 const slug = process.argv[2];
 if (!slug) {
@@ -108,9 +109,39 @@ const res = await fetch("https://api.linkedin.com/v2/ugcPosts", {
 });
 
 const payload = await res.text();
+const shareId = res.headers.get("x-restli-id") || "(none)";
+const ok = res.status === 201;
 console.log(`LinkedIn HTTP ${res.status}`);
-console.log(`share-id: ${res.headers.get("x-restli-id") || "(none)"}`);
+console.log(`share-id: ${shareId}`);
 console.log(payload);
+
+// Receipt: append a one-line record to post-log.ndjson and best-effort commit +
+// push it, so every cross-post leaves a durable, in-repo proof (time, slug,
+// status, share-id). Best-effort: a logging/git failure never fails the post.
+try {
+  const receipt = {
+    ts: new Date().toISOString(),
+    slug,
+    status: res.status,
+    shareId: ok ? shareId : null,
+    mentions: shareCommentary.attributes?.length ?? 0,
+    ok,
+  };
+  appendFileSync(join(here, "linkedin", "post-log.ndjson"), JSON.stringify(receipt) + "\n");
+
+  const repoRoot = dirname(here);
+  const git = (...args) => spawnSync("git", args, { cwd: repoRoot, encoding: "utf8" });
+  git("add", "scripts/linkedin/post-log.ndjson");
+  const commit = git("commit", "-m", `LinkedIn receipt: ${slug} (HTTP ${res.status})`);
+  if (commit.status === 0) {
+    const push = git("push", "origin", "HEAD:master");
+    console.log(push.status === 0 ? "receipt: committed + pushed" : `receipt: committed (push failed: ${(push.stderr || "").trim()})`);
+  } else {
+    console.log(`receipt: written, commit skipped (${(commit.stderr || commit.stdout || "").trim()})`);
+  }
+} catch (e) {
+  console.warn(`receipt logging failed (non-fatal): ${e.message}`);
+}
 
 if (res.status !== 201) {
   if (res.status === 401) console.error("Token expired or invalid (401) — regenerate the LinkedIn token.");
