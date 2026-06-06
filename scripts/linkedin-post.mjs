@@ -63,8 +63,9 @@ if (existsSync(mentionsPath)) {
   }
 }
 
-// 1) Wait for the rebuilt page to be live (up to ~12 min).
-const deadline = Date.now() + 12 * 60 * 1000;
+// 1) Wait for the rebuilt page to be live (up to ~25 min — the Cloudflare build
+//    can sit in a queue on publish day before the post turns from 404 to 200).
+const deadline = Date.now() + 25 * 60 * 1000;
 let live = false;
 while (Date.now() < deadline) {
   try {
