@@ -28,6 +28,32 @@ if (!TOKEN) {
 }
 
 const here = dirname(fileURLToPath(import.meta.url));
+const repoRoot = dirname(here);
+const git = (...args) => spawnSync("git", args, { cwd: repoRoot, encoding: "utf8" });
+const logPath = join(here, "linkedin", "post-log.ndjson");
+
+// Idempotency: if a successful receipt for this slug already exists, skip. This
+// lets the remote routine and the local scheduled task both run safely — whoever
+// posts first wins, the other no-ops — so there are never duplicate shares.
+git("pull", "--ff-only"); // best-effort: pick up a receipt the other runner pushed
+if (existsSync(logPath)) {
+  const already = readFileSync(logPath, "utf8")
+    .split("\n")
+    .filter(Boolean)
+    .map((l) => {
+      try {
+        return JSON.parse(l);
+      } catch {
+        return null;
+      }
+    })
+    .some((r) => r && r.slug === slug && r.ok);
+  if (already) {
+    console.log(`already cross-posted ${slug} (receipt exists) — skipping.`);
+    process.exit(0);
+  }
+}
+
 // Normalise to LF so mention offsets are stable no matter how git checks the
 // caption out (CRLF on Windows, LF in the cloud routine).
 const text = readFileSync(join(here, "linkedin", `${slug}.txt`), "utf8")
@@ -128,10 +154,8 @@ try {
     mentions: shareCommentary.attributes?.length ?? 0,
     ok,
   };
-  appendFileSync(join(here, "linkedin", "post-log.ndjson"), JSON.stringify(receipt) + "\n");
+  appendFileSync(logPath, JSON.stringify(receipt) + "\n");
 
-  const repoRoot = dirname(here);
-  const git = (...args) => spawnSync("git", args, { cwd: repoRoot, encoding: "utf8" });
   git("add", "scripts/linkedin/post-log.ndjson");
   const commit = git("commit", "-m", `LinkedIn receipt: ${slug} (HTTP ${res.status})`);
   if (commit.status === 0) {
