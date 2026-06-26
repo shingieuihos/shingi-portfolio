@@ -39,6 +39,9 @@ export const metadata: Metadata = {
     "WhatTheWordSays",
   ],
   authors: [{ name: "Shingi Mudyirwa" }],
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Shingi Mudyirwa — CTO, Founder, Builder",
     description:
@@ -58,6 +61,37 @@ export const metadata: Metadata = {
   },
 };
 
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Shingi Mudyirwa",
+  url: "https://shingi.tech",
+  image: "https://shingi.tech/portrait.png",
+  jobTitle: "CTO, Founder",
+  description:
+    "CTO at SubSaharaData, Founder at PeakRank Digital, Ministry Director at WhatTheWordSays. Building cloud-native products for African markets from Cape Town.",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Cape Town",
+    addressCountry: "ZA",
+  },
+  worksFor: [
+    { "@type": "Organization", name: "SubSaharaData" },
+    { "@type": "Organization", name: "PeakRank Digital" },
+  ],
+  knowsAbout: [
+    "Cloud Engineering",
+    "AWS",
+    "Cloudflare",
+    "Software Architecture",
+    "African Markets",
+  ],
+  sameAs: [
+    "https://www.linkedin.com/in/shingimudyirwa/",
+    "https://github.com/shingieuihos",
+  ],
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -69,6 +103,12 @@ export default function RootLayout({
       className={`${inter.variable} ${fraunces.variable} ${jetbrains.variable} antialiased`}
     >
       <body className="min-h-screen bg-canvas text-foreground font-sans selection:bg-accent/30 selection:text-foreground">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         {children}
       </body>
     </html>
