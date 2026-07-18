@@ -207,6 +207,13 @@ export type Badge = {
 
 export const badges: Badge[] = [
   {
+    name: "Introduction to Agent Skills",
+    issuer: "Anthropic",
+    date: "Jun 2026",
+    image: "/badges/anthropic.png",
+    url: "https://verify.skilljar.com/c/9spqhhewbuws",
+  },
+  {
     name: "AWS Knowledge: Security Champion",
     issuer: "Amazon Web Services",
     date: "Aug 2025",

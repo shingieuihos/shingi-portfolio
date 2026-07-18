@@ -184,7 +184,7 @@ function About() {
           <div className="rounded-xl border hairline bg-surface/60 p-6 space-y-5">
             <Stat label="Years in IT" value="20+" />
             <Stat label="Years in ministry" value="20+" />
-            <Stat label="AWS badges" value="6" />
+            <Stat label="Certifications" value="7" />
             <Stat label="Live products" value="3" />
             <div className="pt-4 border-t hairline">
               <div className="font-mono text-[10px] uppercase tracking-[0.25em] text-muted-2 mb-3">
@@ -350,10 +350,10 @@ function Certifications() {
       title="Credentialed in cloud."
     >
       <p className="text-foreground/70 max-w-2xl mb-10">
-        AWS-issued knowledge badges, verifiable on Credly. Beyond cloud, I&apos;m
-        building a certified Claude practice at PeakRank Digital — training toward
-        Claude Certified Architect through Anthropic Academy and on the path to the
-        Claude Partner Network.
+        AWS knowledge badges verifiable on Credly, alongside Anthropic Academy
+        certifications verifiable on Skilljar. I&apos;m building a certified
+        Claude practice at PeakRank Digital — training toward Claude Certified
+        Architect and on the path to the Claude Partner Network.
       </p>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
         {badges.map((b) => (
